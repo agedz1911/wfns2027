@@ -1,14 +1,16 @@
 <div>
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Visiting</h2>
         </div>
     </section>
-
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20" id="bali">
+    </section>
+
+    {{-- <section class="px-5 md:px-10 pt-0 pb-10 md:py-20" id="bali">
         <div class="px-2 lg:px-5 text-slate-700">
-            {{-- <div class="flex gap-2 flex-wrap justify-between w-full items-end">
+            <div class="flex gap-2 flex-wrap justify-between w-full items-end">
                 <div class="w-full pb-2">
                     <p class="mb-1 text-[#39B54A]">Welcome to</p>
                     <h2 class="mb-1 text-3xl font-extrabold tracking-wide">Bandung, Indonesia</h2>
@@ -20,7 +22,7 @@
                         diverse attractions make Bandung an inspiring and welcoming host city for national and
                         international events.</p>
                 </div>
-            </div> --}}
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 mt-5">
                 <div class="w-full p-1 flex justify-center">
                     <img src="{{asset('assets/images/bandung/g-sate.jpg')}}"
@@ -42,9 +44,8 @@
 
 
             <div class="pt-10 lg:pt-20">
-                {{-- <h4 class="text-xl font-semibold tracking-wide text-[#39B54A] mb-5">Top Reasons to Visit Bali</h4>
-                --}}
-                <!-- name of each tab group should be unique -->
+                <h4 class="text-xl font-semibold tracking-wide text-[#39B54A] mb-5">Top Reasons to Visit Bali</h4>
+                
                 <div class="tabs tabs-border justify-center gap-3 text-gray-500">
                     <input type="radio" name="my_tabs_2" class="tab hover:text-[#39B54A] text-[#78c9bb]"
                         aria-label="Transportation Information" checked="checked" />
@@ -83,7 +84,7 @@
         }
     }
 }">
-                                    <!-- Slide 1 -->
+                                    
                                     <div id="slide1"
                                         class="carousel-item relative w-full ease-in-out duration-300 h-full object-cover"
                                         x-show="currentSlide === 1"
@@ -104,7 +105,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Slide 2 -->
+                                    
                                     <div id="slide2"
                                         class="carousel-item relative w-full ease-in-out duration-300 h-full object-cover"
                                         x-show="currentSlide === 2"
@@ -125,7 +126,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Slide 3 -->
+                                    
                                     <div id="slide3"
                                         class="carousel-item relative w-full ease-in-out duration-300 h-full object-cover"
                                         x-show="currentSlide === 3"
@@ -146,7 +147,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Indicators (Optional) -->
+                                   
                                     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
                                         @for($i = 1; $i <= $totalSlides; $i++) <button wire:click="goToSlide({{ $i }})"
                                             class="w-3 h-3 rounded-full transition-all duration-300 {{ $currentSlide === $i ? 'bg-success w-8' : 'bg-white/50' }}">
@@ -626,7 +627,7 @@
                                     Airport (CGK) to Bandung</p>
                                 <div class="overflow-x-auto">
                                     <table class="table">
-                                        <!-- head -->
+                                        
                                         <thead>
                                             <tr>
                                                 <th>Operator Bus</th>
@@ -635,7 +636,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- row 1 -->
+                                           
                                             <tr>
                                                 <td>Cititrans</td>
                                                 <td>12:15 AM</td>
@@ -665,7 +666,7 @@
                                     International Airport (CGK) to Bandung</p>
                                 <div class="overflow-x-auto">
                                     <table class="table">
-                                        <!-- head -->
+                                        
                                         <thead>
                                             <tr>
                                                 <th>Operator Shuttle</th>
@@ -676,7 +677,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- row 1 -->
+                                           
                                             <tr>
                                                 <td>Cititrans</td>
                                                 <td>Ready 24 hour (00.15-23.45)</td>
@@ -789,7 +790,7 @@
 
                 </div>
             </div>
-            <!--end row-->
+            
         </div>
     </section>
 
@@ -853,5 +854,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 </div>

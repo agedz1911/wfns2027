@@ -1,6 +1,6 @@
 <div>
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Accommodation</h2>
         </div>
@@ -8,7 +8,7 @@
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20">
         <div class="text-center md:text-start mb-5">
-            <h2 class="mb-3 uppercase text-4xl tracking-wide font-bold">Hotel <span class="text-[#39B54A]">Reservation</span></h2>
+            <h2 class="mb-3 uppercase text-4xl tracking-wide font-bold">Hotel <span class="text-[#018284]">Reservation</span></h2>
             <p class="text-gray-500">The organizers of the ... congress have secured competitive rates at a variety of
                 hotels near the Venue to accommodate delegates
                 with different budgets and preferences. Hotel reservations will open and are subject
@@ -23,7 +23,7 @@
                     <div class="mb-3 relative">
                         {{-- menampilkan string HTML --}}
                         {!! $accommodation->tag ? '<span
-                            class="absolute top-1 right-4 translate-y-5 bg-[#39B54A] rounded-xl text-white px-3 py-1">
+                            class="absolute top-1 right-4 translate-y-5 bg-[#018284] rounded-xl text-white px-3 py-1">
                             <p class="text-xs">' . $accommodation->tag . '</p>
                         </span>' : " " !!}
                         <a href="javascript:void(0)"><img
@@ -46,11 +46,11 @@
                         </p>
                         <p class="text-sm"> Estimated Cost/Night</p>
                         <div class="text-sm mb-6 flex justify-center gap-3">
-                            <p class="text-[#39B54A] font-semibold mb-0"><span
+                            <p class="text-[#018284] font-semibold mb-0"><span
                                     class="fw-normal">IDR</span>
                                 {{number_format($accommodation->idr_price, 0, ',', '.')}}
                             </p>
-                            <p class="text-[#39B54A] font-semibold"><span
+                            <p class="text-[#018284] font-semibold"><span
                                     class="fw-normal">USD</span>
                                 {{$accommodation->usd_price}}
                             </p>
@@ -58,9 +58,9 @@
                     </div>
                     <div class="grid grid-cols-2 gap-2 px-2">
                         <a href="{{$accommodation->url ? $accommodation->url : 'javascript:void(0)'}}"
-                            class="btn bg-[#39B54A] hover:bg-[#b71b69] text-white w-full rounded-lg">Book Now</a>
+                            class="btn bg-[#018284] hover:bg-[#b71b69] text-white w-full rounded-lg">Book Now</a>
                         <a href="{{$accommodation->direction ? $accommodation->direction : 'javascript:void(0)'}}"
-                            class="btn bg-[#39B54A] hover:bg-[#b71b69] text-white w-full btn-outline rounded-lg"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
+                            class="btn bg-[#018284] hover:bg-[#b71b69] text-white w-full btn-outline rounded-lg"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
                     </div>
                 </div>
             </div>

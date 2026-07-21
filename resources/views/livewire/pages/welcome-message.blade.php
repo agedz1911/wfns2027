@@ -1,6 +1,6 @@
 <div>
     <section class="relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Welcome Message</h2>
         </div>

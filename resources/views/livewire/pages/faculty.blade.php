@@ -1,6 +1,6 @@
 <div wire:init="loadFaculties">
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">faculties</h2>
         </div>
@@ -19,7 +19,7 @@
                 <!-- name of each tab group should be unique -->
                 <div class="tabs tabs-border justify-evenly mb-5">
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider text-lg hover:text-[#262262] text-[#9E1F63]"
+                        class="tab uppercase tracking-wider text-lg hover:text-red-600 text-[#044b4a]"
                         aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content  p-5 rounded-lg">
                         @if (!$readyToLoad)
@@ -48,7 +48,7 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#9E1F63] hover:text-[#262262] hover:cursor-pointer">
+                                        class="text-xl font-semibold text-[#044b4a] hover:text-red-600 hover:cursor-pointer">
                                         {{$indo->name}}
                                     </h2>
                                     <p>{{$indo->description}}</p>
@@ -68,7 +68,7 @@
                                             assets/images/speaker.png"}}" alt="Photo">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-[#9E1F63] text-lg font-semibold">{{$indo->name}}</span>
+                                                    class="text-[#044b4a] text-lg font-semibold">{{$indo->name}}</span>
                                                 <br>
                                                 {{$indo->country}}
                                             </p>
@@ -109,7 +109,7 @@
                     </div>
 
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider  text-lg hover:text-[#262262] text-[#9E1F63]"
+                        class="tab uppercase tracking-wider  text-lg hover:text-red-600 text-[#044b4a]"
                         aria-label="International faculties"  />
                     <div class="tab-content  p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
@@ -138,7 +138,7 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_f{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#9E1F63] hover:cursor-pointer hover:text-[#262262]">
+                                        class="text-xl font-semibold text-[#044b4a] hover:cursor-pointer hover:text-red-600">
                                         {{$foreign->name}}
                                     </h2>
                                     <div class="flex justify-center">
@@ -165,7 +165,7 @@
                                             assets/images/speaker.png"}}" alt="{{$foreign->name}}">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-[#9E1F63] text-lg font-semibold">{{$foreign->name}}</span>
+                                                    class="text-[#044b4a] text-lg font-semibold">{{$foreign->name}}</span>
                                                 <br>
                                                 {{$foreign->country}}
                                             </p>

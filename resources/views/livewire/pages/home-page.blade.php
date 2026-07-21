@@ -1,6 +1,6 @@
 <div class="relative">
     <section class="lg:min-h-screen banner relative pb-16 lg:pb-28">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#044b4a]/50 from-10% to-[#018284]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#024C4B]/50 from-10% to-[#2E989A]/80"></div>
         <div
             class="z-10 relative pt-10 md:pt-14 lg:pt-32 flex flex-col md:flex-row items-start justify-start md:items-start md:justify-evenly gap-4">
 
@@ -32,16 +32,17 @@
                         Bridging Networks Across Islands"</p>
                 </div>
                 <p class="text-white mt-1">
-                    September 29<sup>th</sup> - October 2<sup>nd</sup>, 2027 <br> Hotel Bumi, Surabaya, Indonesia
+                    September 29<sup>th</sup> - October 2<sup>nd</sup>, 2027 <br> Bumi Surabaya City Resort, Surabaya,
+                    Indonesia
                 </p>
-                {{-- <div class="mt-7 w-full gap-1 flex flex-wrap">
+                <div class="mt-7 w-full gap-1 flex flex-wrap">
                     <a
                         class="text-white hover:cursor-pointer hover:bg-red-700  bg-red-600 hover:border-red-600 focus:ring-4 focus:outline-none focus:ring-red-600 font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-red-600 dark:text-red-600 dark:hover:text-white dark:hover:bg-red-800 dark:focus:ring-white"><i
                             class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate
-                        class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg btn-error btn-outline"><i
+                        class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg "><i
                             class="fa-solid fa-pen-to-square"></i> Register Now </a>
-                </div> --}}
+                </div>
             </div>
             <div class="px-1 order-2 lg:order-2">
                 <livewire:section.flyer />
@@ -110,8 +111,6 @@
                     1<sup>st</sup> Congress of Indonesian Society for Stereotactic and Functional Neurosurgery
                     (INASSFN) and <br>
                     7<sup>th</sup> Congress of Indonesian Neurosurgical Pain Society (INPS)</p>
-                <p class="italic mt-3 text-red-600 font-bold text-xl md:text-2xl">"Global Functional Neurosurgery:
-                    Bridging Networks Across Islands"</p>
             </div>
             <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-8">
                 <div
@@ -122,7 +121,7 @@
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
                             <p class="text-sm font-medium  truncate">
-                                Thursday to Sunday
+                                Wednesday to Saturday
                             </p>
                             <p class="text-sm text-gray-500 truncate">
                                 September 29<sup>th</sup> - October 2<sup>nd</sup>, 2027
@@ -138,7 +137,7 @@
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
                             <p class="text-sm font-medium  truncate ">
-                                Hotel Bumi
+                                Bumi Surabaya City Resort
                             </p>
                             <p class="text-sm text-gray-500 truncate">
                                 Surabaya, Indonesia
@@ -153,21 +152,21 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 align-items-center">
                 <div class="flex flex-col gap-4">
                     <div class="rounded-xl bg-white shadow-lg">
-                        <img src="assets/images/jakarta/2.jpg" class="w-full rounded-xl saturate-100" alt="jakarta 1">
+                        <img src="assets/images/surabaya/5.jpg" class="w-full rounded-xl sepia-25" alt="surabaya 1">
                     </div>
                     <div class="rounded-xl bg-white shadow-lg">
-                        <img src="assets/images/jakarta/3.webp" class="w-full rounded-xl sepia-25" alt="jakarta 2">
+                        <img src="assets/images/surabaya/6.jpg" class="w-full rounded-xl sepia-50" alt="surabaya 2">
                     </div>
                 </div>
                 <div class="rounded-xl bg-white shadow-lg">
-                    <img src="assets/images/jakarta/1.jpg" class="w-full rounded-xl object-cover h-full saturate-200"
-                        alt="jakarta 3">
+                    <img src="assets/images/surabaya/4.jpg" class="w-full rounded-xl object-cover h-full sepia-25"
+                        alt="surabaya 3">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-gradient-to-t from-[#9E1F63] to-[#3C3793] relative z-0 py-28">
+    <section class="bg-gradient-to-b from-[#044b4a] to-[#018284] relative z-0 py-28">
         {{-- <div class="absolute inset-0 feature start-0"></div> --}}
         <div class="relative">
 
@@ -190,7 +189,7 @@
                                         assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
                                         class="w-full max-w-52 shadow-md rounded-lg ">
                                 </div>
-                                <div class="p-4 rounded-xl bg-[#9E1F63] w-full max-w-sm mt-3 mb-5">
+                                <div class="p-4 rounded-xl bg-[#044b4a] w-full max-w-sm mt-3 mb-5">
                                     <div class="p-2 border-s border-white border-spacing-7">
                                         <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
                                         </p>
@@ -205,7 +204,7 @@
                                         assets/images/speaker.png"}}" alt="{{$welcomeMessage->name2}}"
                                         class="w-full max-w-52 shadow-md rounded-lg ">
                                 </div>
-                                <div class="p-4 rounded-xl bg-[#9E1F63] w-full max-w-sm mt-3 mb-5">
+                                <div class="p-4 rounded-xl bg-[#044b4a] w-full max-w-sm mt-3 mb-5">
                                     <div class="p-2 border-s border-white border-spacing-7">
                                         <p class="text-white text-xs italic"> {{$welcomeMessage->title2}}
                                         </p>
@@ -219,7 +218,7 @@
                     @endforeach
                 </div>
             </div>
-            {{-- <div class="w-full max-w-6xl mx-auto border-t mt-10 pt-10 border-white border-opacity-35">
+            <div class="w-full max-w-6xl mx-auto border-t mt-10 pt-10 border-white border-opacity-35">
                 <div class="mb-16">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div class="w-full border-e border-opacity-35 border-white ">
@@ -233,7 +232,7 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="25"></span><span>+</span>
+                                        data-val="40"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Symposium</p>
                             </div>
@@ -241,7 +240,7 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="16"></span><span>+</span>
+                                        data-val="10"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Workshops </p>
                             </div>
@@ -249,21 +248,21 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="40"></span><span>+</span>
+                                        data-val="50"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Topics</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </section>
 
     <section class="lg:py-16 py-20  relative z-0 bg-competition">
         <div class="w-full pt-5">
             <div class="text-center pb-6 m-auto">
-                <h2 class="mb-5 md:mb-8 text-3xl font-bold uppercase text-[#9E1F63]">important <span
+                <h2 class="mb-5 md:mb-8 text-3xl font-bold uppercase text-[#044b4a]">important <span
                         class="">Dates</span></h2>
             </div>
             <livewire:section.important-date />
@@ -274,8 +273,7 @@
         <div class="border-b-2 border-dashed border-[#302b88]/50 pb-10">
             <div class="">
                 <div class="text-center pb-6 w-60 m-auto">
-                    {{-- <span class="mb-1  text-sm">49<sup>th</sup> ASMIUA</span> --}}
-                    <h2 class="mb-1 text-[#9E1F63] text-xl md:text-3xl font-bold uppercase">SPONSors</h2>
+                    <h2 class="mb-1 text-[#044b4a] text-xl md:text-3xl font-bold uppercase">SPONSors</h2>
                 </div>
                 <div class="mt-10">
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-4 items-center justify-center">
@@ -294,7 +292,8 @@
                     </div>
                 </div>
                 <div class="text-center my-10">
-                    <a class="btn btn-warning border-none rounded-xl uppercase" href="/sponsors">VIEW
+                    <a class="btn bg-red-600 hover:bg-red-800 text-white border-none rounded-xl uppercase"
+                        href="/sponsors">VIEW
                         MORE Sponsors</a>
                 </div>
             </div>
@@ -304,54 +303,52 @@
     <section class="w-full pt-24 pb-3 px-2 lg:px-4">
         <div class="text-center mb-5 pb-10">
             <h2 class="md:text-3xl text-xl font-semibold uppercase mb-1">GET DIRECTION TO THE <span
-                    class="text-[#302b88]">Venue</span></h2>
+                    class="text-[#044b4a]">Venue</span></h2>
         </div>
         <div class="">
             <div class="flex flex-col lg:flex-row gap-5">
                 <div class="lg:w-1/3 w-fit">
-                    <div class="py-10  px-4 text-white rounded-lg shadow-md bg-[#9E1F63]">
+                    <div class="py-10  px-4 text-white rounded-lg shadow-md bg-[#044b4a]">
                         <div class="">
                             <h5 class="pb-2 tracking-wide font-semibold">EVENT VENUE :
                             </h5>
-                            <p class="pb-5 m-0 text-sm"> Novotel Jakarta Mangga Dua Square </p>
+                            <p class="pb-5 m-0 text-sm"> Bumi Surabaya City Resort </p>
                             <h5 class="pb-2 tracking-wide font-semibold">ADDRESS :
                             </h5>
-                            <p class="pb-5 m-0 text-sm"> Jl. Gunung Sahari No.3, Mangga Dua, Jakarta 10720, Indonesia
+                            <p class="pb-5 m-0 text-sm"> Jl. Jenderal Basuki Rachmat No.106 - 128, Surabaya, East Java, Indonesia
                             </p>
 
                             <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
                                     <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
-                            <a href="https://www.google.com/maps/dir//Novotel+Jakarta+Mangga+Dua+Square,+Jl.+Gunung+Sahari+No.3,+Mangga+Dua,+Jakarta+10720,+Indonesia/@-6.1381542,106.8292809,17z/data=!4m19!1m10!3m9!1s0x2e69f5e95865ff97:0xb8a7aa655d685d39!2sNovotel+Jakarta+Mangga+Dua+Square!5m2!4m1!1i2!8m2!3d-6.1381542!4d106.8292809!16s%2Fg%2F1td8w6x8!4m7!1m0!1m5!1m1!1s0x2e69f5e95865ff97:0xb8a7aa655d685d39!2m2!1d106.8292809!2d-6.1381542?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
-                                target="_blank" class="hover:text-[#9E1F63]">Get Directions</a>
+                            <a href="https://www.google.com/maps/dir//Bumi+Surabaya+City+Resort,+Jl.+Jenderal+Basuki+Rachmat+No.106+-+128,+Embong+Kaliasin,+Genteng,+Surabaya,+East+Java+60271/@-7.2715158,112.7383965,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd7fbdf9a148d5b:0xcc90538be2b721c!2m2!1d112.7409714!2d-7.2715211?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" class="hover:text-red-500">Get Directions</a>
                         </div>
                     </div>
                 </div>
                 <div class="lg:w-2/3 w-full px-1 flex flex-col md:flex-row gap-2">
-
                     <iframe class="rounded-lg w-full "
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9445350877345!2d106.8292808749897!3d-6.138154193848746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e95865ff97%3A0xb8a7aa655d685d39!2sNovotel%20Jakarta%20Mangga%20Dua%20Square!5e0!3m2!1sid!2sid!4v1784044670327!5m2!1sid!2sid"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.730164077011!2d112.73839647606316!3d-7.271515771454071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbdf9a148d5b%3A0xcc90538be2b721c!2sBumi%20Surabaya%20City%20Resort!5e0!3m2!1sen!2sid!4v1784643428439!5m2!1sen!2sid"
                         width="600" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-5 justify-items-center">
 
                 <div class="w-full ">
-                    <a><img src="{{asset('assets/images/jakarta/4.jpg')}}"
+                    <a><img src="{{asset('assets/images/surabaya/1.jpg')}}"
                             class="w-full max-h-96 object-cover rounded-xl shadow-md saturate-150"
-                            alt="venue jakarta "></a>
+                            alt="venue surabaya "></a>
                 </div>
                 <div class="w-full ">
-                    <a><img src="{{asset('assets/images/jakarta/5.jpg')}}"
+                    <a><img src="{{asset('assets/images/surabaya/2.jpg')}}"
                             class="w-full max-h-96 object-cover rounded-xl shadow-md saturate-150"
-                            alt="venue jakarta "></a>
+                            alt="venue surabaya "></a>
                 </div>
                 <div class="w-full ">
-                    <a><img src="{{asset('assets/images/jakarta/6.jpg')}}"
+                    <a><img src="{{asset('assets/images/surabaya/3.jpg')}}"
                             class="w-full max-h-96 object-cover object-top rounded-xl shadow-md sepia-50"
-                            alt="venue jakarta "></a>
+                            alt="venue surabaya "></a>
                 </div>
             </div>
         </div>
@@ -377,7 +374,7 @@
         // Get current date and time
         const currentTime = new Date();
 
-        const targetTime = new Date(2026, 10, 12, 8, 0, 0);
+        const targetTime = new Date(2027, 8, 29, 8, 0, 0);
 
         // Update countdown time
         function updateCountdown() {

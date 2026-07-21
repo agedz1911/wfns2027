@@ -10,7 +10,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('JINeF 2026')]
+#[Title('WSSFN 2027')]
 class HomePage extends Component
 {
     public function render()

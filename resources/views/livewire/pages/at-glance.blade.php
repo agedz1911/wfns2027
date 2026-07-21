@@ -1,6 +1,6 @@
 <div>
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-l from-[#9E1F63] to-[#3C3793]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">program at glance</h2>
         </div>
@@ -15,13 +15,13 @@
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
 
-        <div class="flex flex-wrap items-center justify-center">
+        {{-- <div class="flex flex-wrap items-center justify-center">
             <div x-data="{ openTab: 1 }" class="lg:w-11/12 w-full mx-auto">
                 <div class="">
                     <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
-                        {{-- <button x-on:click="openTab = 5" :class="{ 'bg-[#9E1F63] text-white': openTab === 5 }"
+                        <button x-on:click="openTab = 5" :class="{ 'bg-[#9E1F63] text-white': openTab === 5 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8
-                            October</button> --}}
+                            October</button>
                         <button x-on:click="openTab = 1" :class="{ 'bg-[#9E1F63] text-white': openTab === 1 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">12
                             November</button>
@@ -52,7 +52,7 @@
                                 <tbody>
                                     <tr class="">
                                         <td class="align-top">
-                                            {{-- @dd($delapan) --}}
+                                            
                                             @foreach ($delapan as $room1)
                                             @if ($room1->room == 'Ibis Style Room')
                                             <button class="hover:shadow-md block w-full my-1"
@@ -112,7 +112,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -121,7 +121,7 @@
                                             @endforeach
                                         </td>
                                         <td class="align-top">
-                                            {{-- @dd($delapan) --}}
+                                            
                                             @foreach ($delapan as $room2)
                                             @if ($room2->room == 'Forensik RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
@@ -181,7 +181,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -190,7 +190,7 @@
                                             @endforeach
                                         </td>
                                         <td class="align-top">
-                                            {{-- @dd($delapan) --}}
+                                            
                                             @foreach ($delapan as $room3)
                                             @if ($room3->room == 'Novotel Room')
                                             <button class="hover:shadow-md block w-full my-1"
@@ -250,7 +250,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -259,7 +259,7 @@
                                             @endforeach
                                         </td>
                                         <td class="align-top">
-                                            {{-- @dd($delapan) --}}
+                                           
                                             @foreach ($delapan as $room4)
                                             @if ($room4->room == 'RSUPN dr. Cipto Mangunkusumo')
                                             <button class="hover:shadow-md block w-full my-1"
@@ -319,7 +319,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -410,7 +410,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -479,7 +479,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -548,7 +548,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -617,7 +617,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -707,7 +707,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -775,7 +775,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -843,7 +843,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -933,7 +933,7 @@
                                                     </div>
                                                     <div class="modal-action">
                                                         <form method="dialog">
-                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            
                                                             <button class="btn">Close</button>
                                                         </form>
                                                     </div>
@@ -956,7 +956,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> --}}
         <div class="px-4 md:px-10 mt-10">
             <p class="text-sm text-error italic">
                 Note: <br>

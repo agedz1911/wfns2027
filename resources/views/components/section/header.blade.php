@@ -3,23 +3,20 @@
     <div class="mx-auto flex justify-between items-center px-4">
 
         <div>
-            {{-- <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="mailto:jinef2026@pharma-pro.com">
+            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="mailto:tiolan@pharma-pro.com">
                 <i class="fa fa-envelope">
                 </i>
-            </a> --}}
+            </a>
             <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="tel:+62816995230">
                 <i class="fa fa-phone">
                 </i>
             </a>
-            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6285891087800" target="_blank">
-                <i class="fa fa-whatsapp">
-                </i>
-            </a>
+
             <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6281317857586" target="_blank">
                 <i class="fa fa-whatsapp">
                 </i>
             </a>
-            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="https://www.instagram.com/jinef2026_" target="_blank">
+            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="javascript:void(0)">
                 <i class="fa fa-instagram">
                 </i>
             </a>
@@ -28,8 +25,8 @@
             <div class="border-r pr-3">
                 <span class="ml-4 hover:underline hover:text-error text-sm">
                     <i class="fa fa-envelope mr-1"></i>
-                    <a href="mailto:jinef2026@pharma-pro.com">
-                        jinef2026@pharma-pro.com
+                    <a href="mailto:tiolan@pharma-pro.com">
+                        tiolan@pharma-pro.com
                     </a>
                 </span>
             </div>
@@ -44,7 +41,7 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-12 hidden md:block" alt="Logo" />
+                    <img src="assets/images/logo/logo-event-dark.png" class="h-full max-h-12 hidden md:block" alt="Logo" />
                     <img src="assets/images/logo/logo-event-dark.png" class="h-full max-h-12 md:hidden" alt="Logo" />
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
