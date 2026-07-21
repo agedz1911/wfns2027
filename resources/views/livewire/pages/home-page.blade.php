@@ -1,73 +1,81 @@
 <div class="relative">
     <section class="lg:min-h-screen banner relative pb-16 lg:pb-28">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#D82128]/50 from-10% to-[#9E1F63]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#044b4a]/50 from-10% to-[#018284]/80"></div>
         <div
-            class="z-10 relative pt-10 md:pt-14 lg:pt-32 flex flex-col md:flex-row items-start justify-start md:items-start md:justify-start gap-4">
+            class="z-10 relative pt-10 md:pt-14 lg:pt-32 flex flex-col md:flex-row items-start justify-start md:items-start md:justify-evenly gap-4">
 
-            <div class="px-5 md:px-20 order-1 lg:order-2 w-full max-w-7xl flex flex-col items-center md:items-start">
-                <img src="{{asset('assets/images/logo/logo-all.png')}}" class="w-40 rounded-xl" alt="Banner">
-                <div class="flex gap-1 items-center">
+            <div class="px-5 md:px-20 order-1 lg:order-1 w-full max-w-4xl flex flex-col items-center md:items-start">
+                {{-- <img src="{{asset('assets/images/logo/logo-all.png')}}" class="w-40 rounded-xl" alt="Banner"> --}}
+                <div class="flex gap-1 items-center justify-center">
                     <div>
-                        <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
+                        <img src="{{asset('assets/images/logo/icon.png')}}" class="md:w-40 w-20" alt="">
                     </div>
-                    <div class="w-full max-w-2xl">
+                    <div class="">
                         <h1
-                            class="font-bold text-3xl lg:tracking-widest tracking-wide lg:text-6xl text-white mt-0 mb-2">
-                            JINeF - PIT INPS</h1>
-                        <p class="text-white text-xs lg:text-base">The 3<sup>rd</sup>
-                            Jakarta International Neurosurgery Forum (JINeF)
-                            <span class="italic">in conjunction with </span><br>
-                            6<sup>th</sup> Annual
-                            Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)
-                        </p>
+                            class="font-bold uppercase text-3xl lg:text-5xl text-white mt-0 mb-0 lg:tracking-widest tracking-wide">
+                            wssfn 2027</h1>
+                        <h1 class="text-white text-2xl lg:text-4xl font-light tracking-wider">INTERIM MEETING
+                        </h1>
+                    </div>
+                    <div>
+                        <img src="{{asset('assets/images/logo/icon-2.png')}}" class="md:w-40 w-20" alt="">
                     </div>
                 </div>
-                <div class="w-full">
-                    <p class="italic mt-3 text-[#F8D73D] font-bold text-xl md:text-2xl">" Synergy in Neurosurgery:
-                        Bridging Specialities for Excellence "</p>
+                <div class="w-full max-w-3xl mt-1">
+                    <p class="text-white"><span class="text-xl font-bold">World Society for Stereotactic and Functional
+                            Neurosurgery</span> <br>
+                        in conjuction with <br>
+                        1<sup>st</sup> Congress of Indonesian Society for Stereotactic and Functional Neurosurgery
+                        (INASSFN) and <br>
+                        7<sup>th</sup> Congress of Indonesian Neurosurgical Pain Society (INPS)</p>
+                    <p class="italic mt-3 text-red-600 font-bold text-xl md:text-2xl">"Global Functional Neurosurgery:
+                        Bridging Networks Across Islands"</p>
                 </div>
-                <p class="text-white mt-5">
-                    <span class="bg-[#9E1F63] md:px-5 px-3 py-1 rounded-br-2xl rounded-tl-2xl">November 12<sup>th</sup>
-                        - 15<sup>th</sup> 2026</span> Novotel Jakarta Mangga Dua Square, Jakarta, Indonesia
+                <p class="text-white mt-1">
+                    September 29<sup>th</sup> - October 2<sup>nd</sup>, 2027 <br> Hotel Bumi, Surabaya, Indonesia
                 </p>
-                <div class="mt-7 w-full gap-1 flex flex-wrap">
+                {{-- <div class="mt-7 w-full gap-1 flex flex-wrap">
                     <a
-                        class="text-white hover:cursor-pointer border bg-[#9E1F63] hover:border-[#9E1F63] focus:ring-4 focus:outline-none focus:ring-[#9E1F63] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#9E1F63] dark:text-[#9E1F63] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i
+                        class="text-white hover:cursor-pointer hover:bg-red-700  bg-red-600 hover:border-red-600 focus:ring-4 focus:outline-none focus:ring-red-600 font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-red-600 dark:text-red-600 dark:hover:text-white dark:hover:bg-red-800 dark:focus:ring-white"><i
                             class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate
-                        class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg btn-warning"><i
+                        class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg btn-error btn-outline"><i
                             class="fa-solid fa-pen-to-square"></i> Register Now </a>
-                </div>
+                </div> --}}
+            </div>
+            <div class="px-1 order-2 lg:order-2">
+                <livewire:section.flyer />
             </div>
         </div>
         <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path class="fill-white translate-middle-y" fill-opacity="1"
-                    d="M0,96L120,128C240,160,480,224,720,256C960,288,1200,288,1320,288L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                    d="M0,64L80,96C160,128,320,192,480,234.7C640,277,800,299,960,288C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
                 </path>
             </svg>
+
         </div>
     </section>
 
     <section class="px-2 -mt-10 lg:-mt-30 lg:px-7 pb-24 ">
         <div id="countdown" class="flex flex-wrap justify-center lg:justify-start md:flex-row w-full mx-auto gap-4">
-            <div class="card bg-[#25216B]/90 rounded-2xl w-full max-w-2xl">
+            <div class="card bg-[#044b4a] rounded-2xl w-full max-w-2xl">
                 <div class="card-body">
                     <div class="flex justify-evenly gap-4 items-center">
-                        <div>
+                        <div class="text-center">
                             <span id="days" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
                             <small class="text-white mt-0 text-xs">Days</small>
                         </div>
-                        <div>
+                        <div class="text-center">
                             <span id="hours" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
                             <small class="text-white mt-0 text-xs">Hours</small>
                         </div>
-                        <div>
+                        <div class="text-center">
                             <span id="minutes" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
                             <small class="text-white mt-0 text-xs">Minutes</small>
                         </div>
-                        <div>
+                        <div class="text-center">
                             <span id="seconds" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
                             <small class="text-white mt-0 text-xs">Seconds</small>
                         </div>
@@ -79,31 +87,37 @@
 
     <section class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3">
         <div class=" px-3 lg:px-8">
-            <img src="assets/images/logo/logo-all.png" alt="Icon" class="w-60 mb-5" class="">
-            <div class="flex gap-1 mt-6">
+            {{-- <img src="assets/images/logo/logo-all.png" alt="Icon" class="w-60 mb-5" class=""> --}}
+            <div class="flex gap-1 items-center justify-center">
                 <div>
-                    <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
+                    <img src="{{asset('assets/images/logo/icon.png')}}" class="md:w-40 w-20" alt="">
                 </div>
-                <div class="w-full ">
-                    <h1 class="font-bold text-3xl lg:tracking-wide tracking-wide lg:text-6xl text-[#9E1F63] mt-0 mb-2">
-                        JINeF - PIT INPS</h1>
-                    <p class="text-[#9E1F63] text-xs lg:text-base">The 3<sup>rd</sup>
-                        Jakarta International Neurosurgery Forum (JINeF) <br>
-                        <span class="italic">in conjunction with </span><br>
-                        6<sup>th</sup> Annual
-                        Scientific Meeting Indonesian Neurosurgical Pain Society (INPS)
-                    </p>
+                <div class="">
+                    <h1
+                        class="font-bold uppercase text-3xl lg:text-5xl text-[#044b4a] mt-0 mb-0 lg:tracking-widest tracking-wide">
+                        wssfn 2027</h1>
+                    <h1 class="text-[#044b4a] text-2xl lg:text-4xl font-light tracking-wider">INTERIM MEETING
+                    </h1>
+                </div>
+                <div>
+                    <img src="{{asset('assets/images/logo/icon-2.png')}}" class="md:w-40 w-20" alt="">
                 </div>
             </div>
-            <div class="w-full max-w-2xl">
-                <p class="italic mt-3 font-bold md:text-xl">" Synergy in Neurosurgery: Bridging Specialities for
-                    Excellence "</p>
+            <div class="w-full max-w-3xl mt-1">
+                <p class="text-[#044b4a]"><span class="text-xl font-bold">World Society for Stereotactic and Functional
+                        Neurosurgery</span> <br>
+                    in conjuction with <br>
+                    1<sup>st</sup> Congress of Indonesian Society for Stereotactic and Functional Neurosurgery
+                    (INASSFN) and <br>
+                    7<sup>th</sup> Congress of Indonesian Neurosurgical Pain Society (INPS)</p>
+                <p class="italic mt-3 text-red-600 font-bold text-xl md:text-2xl">"Global Functional Neurosurgery:
+                    Bridging Networks Across Islands"</p>
             </div>
             <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-8">
                 <div
                     class="z-10 hover:cursor-pointer max-w-sm p-6 bg-white border border-sky-50 rounded-lg shadow-md hover:bg-[#f4f4fc]">
                     <div class="flex items-center">
-                        <div class="shrink-0 bg-[#9E1F63] p-4 rounded-full">
+                        <div class="shrink-0 bg-red-600 p-4 rounded-full">
                             <i class="fa fa-calendar-o text-xl text-white"></i>
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
@@ -111,7 +125,7 @@
                                 Thursday to Sunday
                             </p>
                             <p class="text-sm text-gray-500 truncate">
-                                November 12<sup>th</sup> - 15<sup>th</sup>, 2026
+                                September 29<sup>th</sup> - October 2<sup>nd</sup>, 2027
                             </p>
                         </div>
                     </div>
@@ -119,15 +133,15 @@
                 <div
                     class="z-10 hover:cursor-pointer max-w-sm p-6 bg-white border border-sky-50 rounded-lg shadow-md hover:bg-[#f4f4fc]">
                     <div class="flex items-center px-5">
-                        <div class="shrink-0 bg-[#9E1F63] p-4 rounded-full">
+                        <div class="shrink-0 bg-red-600 p-4 rounded-full">
                             <i class="fa fa-map-marker text-xl text-white"></i>
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
                             <p class="text-sm font-medium  truncate ">
-                                Novotel Mangga Dua Square
+                                Hotel Bumi
                             </p>
                             <p class="text-sm text-gray-500 truncate">
-                                Jakarta, Indonesia
+                                Surabaya, Indonesia
                             </p>
                         </div>
                     </div>
@@ -136,7 +150,20 @@
         </div>
 
         <div class="">
-            <livewire:section.flyer />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 align-items-center">
+                <div class="flex flex-col gap-4">
+                    <div class="rounded-xl bg-white shadow-lg">
+                        <img src="assets/images/jakarta/2.jpg" class="w-full rounded-xl saturate-100" alt="jakarta 1">
+                    </div>
+                    <div class="rounded-xl bg-white shadow-lg">
+                        <img src="assets/images/jakarta/3.webp" class="w-full rounded-xl sepia-25" alt="jakarta 2">
+                    </div>
+                </div>
+                <div class="rounded-xl bg-white shadow-lg">
+                    <img src="assets/images/jakarta/1.jpg" class="w-full rounded-xl object-cover h-full saturate-200"
+                        alt="jakarta 3">
+                </div>
+            </div>
         </div>
     </section>
 

@@ -1,12 +1,12 @@
 <ul class="flex gap-6 uppercase">
     <li>
         <a href="/" wire:navigate
-            class="{{ request()->is('/') ? 'text-white' : 'text-[#d8d521]' }} hover:text-[#D82128] hover:underline ">Home
+            class="{{ request()->is('/') ? 'text-white' : 'text-red-600' }} hover:text-[#D82128] hover:underline ">Home
         </a>
     </li>
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{ request()->is('organizing-committee') || request()->is('faculties') || request()->is('welcome-message') ? 'text-white' : 'text-[#d8d521]' }} hover:cursor-pointer hover:text-[#D82128]">
+            class="{{ request()->is('organizing-committee') || request()->is('faculties') || request()->is('welcome-message') ? 'text-white' : 'text-red-600' }} hover:cursor-pointer hover:text-[#D82128]">
             Congress Information <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             <li>
@@ -29,7 +29,7 @@
 
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{ request()->is('program-at-glance') || request()->is('topics') || request()->is('scientific-schedule') ? 'text-white' : 'text-[#d8d521]' }} hover:cursor-pointer hover:text-[#D82128]">
+            class="{{ request()->is('program-at-glance') || request()->is('topics') || request()->is('scientific-schedule') ? 'text-white' : 'text-red-600' }} hover:cursor-pointer hover:text-[#D82128]">
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
 
@@ -53,18 +53,18 @@
 
     <li>
         <a href="/registration" wire:navigate
-            class="{{ request()->is('registration') ? 'text-white' : 'text-[#d8d521]' }} hover:text-[#D82128] hover:underline">Registration
+            class="{{ request()->is('registration') ? 'text-white' : 'text-red-600' }} hover:text-[#D82128] hover:underline">Registration
         </a>
     </li>
     {{-- <li>
         <a href="/accommodation" wire:navigate
-            class="{{ request()->is('accommodation') ? 'text-white' : 'text-[#d8d521]' }} hover:text-[#D82128] hover:underline">Accommodation
+            class="{{ request()->is('accommodation') ? 'text-white' : 'text-red-600' }} hover:text-[#D82128] hover:underline">Accommodation
         </a>
     </li> --}}
 
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{ request()->is('submission')  || request()->is('presentation-schedule')  ? 'text-white' : 'text-[#d8d521]' }} hover:cursor-pointer hover:text-[#D82128]">
+            class="{{ request()->is('submission')  || request()->is('presentation-schedule')  ? 'text-white' : 'text-red-600' }} hover:cursor-pointer hover:text-[#D82128]">
             Free Paper <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             {{-- <li>
@@ -84,7 +84,7 @@
     </div>
     {{-- <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{ request()->is('visiting')  || request()->is('social-program')  ? 'text-white' : 'text-[#d8d521]' }} hover:cursor-pointer hover:text-[#D82128]">
+            class="{{ request()->is('visiting')  || request()->is('social-program')  ? 'text-white' : 'text-red-600' }} hover:cursor-pointer hover:text-[#D82128]">
             Visiting <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             <li>

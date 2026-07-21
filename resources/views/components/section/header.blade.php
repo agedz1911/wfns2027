@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="bg-gradient-to-l from-[#D82128] via-[#A33592] to-[#3C3793] hidden lg:block text-white text-sm py-2">
+<header class="bg-gradient-to-l from-[#044b4a] via-[#018284] to-[#018284] hidden lg:block text-white text-sm py-2">
     <div class="mx-auto flex justify-between items-center px-4">
 
         <div>
@@ -7,26 +7,26 @@
                 <i class="fa fa-envelope">
                 </i>
             </a> --}}
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="tel:+62816995230">
+            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="tel:+62816995230">
                 <i class="fa fa-phone">
                 </i>
             </a>
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6285891087800" target="_blank">
+            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6285891087800" target="_blank">
                 <i class="fa fa-whatsapp">
                 </i>
             </a>
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6281317857586" target="_blank">
+            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6281317857586" target="_blank">
                 <i class="fa fa-whatsapp">
                 </i>
             </a>
-            <a class="btn border-none btn-warning btn-sm rounded-full shadow-none w-8" href="https://www.instagram.com/jinef2026_" target="_blank">
+            <a class="btn border-none bg-red-600 hover:bg-red-800 text-white btn-sm rounded-full shadow-none w-8" href="https://www.instagram.com/jinef2026_" target="_blank">
                 <i class="fa fa-instagram">
                 </i>
             </a>
         </div>
         <div class="flex">
             <div class="border-r pr-3">
-                <span class="ml-4 hover:underline hover:text-[#FFF000] text-sm">
+                <span class="ml-4 hover:underline hover:text-error text-sm">
                     <i class="fa fa-envelope mr-1"></i>
                     <a href="mailto:jinef2026@pharma-pro.com">
                         jinef2026@pharma-pro.com
@@ -52,7 +52,7 @@
                 </div>
                 <div class="navbar-end">
                     <div onclick="contact.showModal()"
-                        class=" border-none btn-warning text-slate-900 btn rounded-lg shadow-none mx-2 flex gap-2">
+                        class=" border-none bg-red-600 hover:bg-red-800  text-white btn rounded-lg shadow-none mx-2 flex gap-2">
                         <i class="fa fa-image-portrait"></i>
                         Contact
                     </div>
