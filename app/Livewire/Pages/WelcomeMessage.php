@@ -6,7 +6,7 @@ use App\Models\WelcomeMessage as ModelsWelcomeMessage;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('Welcome Message - WSSFN 2027')]
+#[Title('Welcome Message - WFNS 2027')]
 
 class WelcomeMessage extends Component
 {

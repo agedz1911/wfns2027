@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'JINEF 2026' }}</title>
-    <meta name="description" content="The 3rd Jakarta International Neurosurgery Forum" />
-    <meta name="keywords" content="Neurosurgery, Jakarta, International, Forum, Neurosurgeon" />
+    <title>{{ $title ?? 'WFNS 2027' }}</title>
+    <meta name="description" content="The 20th World Congress of Neurosurgery - One world, one neurosurgery, The Bali Renaissance" />
+    <meta name="keywords" content="wfns, Bali, International, Neurosurgeon, Neurosurgery" />
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->
@@ -25,8 +25,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- theme daisyui -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     
 </head>
 
@@ -37,7 +36,7 @@
 
     <!-- Back-to-top Button start -->
     <button onclick="topFunction()" id="back-to-top"
-        class="fixed rounded z-10 bottom-5 end-5 bg-[#D82128] border-none shadow-none text-white btn btn-sm hover:scale-105">
+        class="fixed rounded z-10 bottom-5 end-5 bg-primary border-none shadow-none text-white btn btn-sm hover:scale-105">
         <i class="fa-solid fa-angles-up"></i>
     </button>
     <!-- Back-to-top Button end -->

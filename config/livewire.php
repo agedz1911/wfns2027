@@ -129,7 +129,7 @@ return [
 
     'navigate' => [
         'show_progress_bar' => true,
-        'progress_bar_color' => '#018284',
+        'progress_bar_color' => '#1B1464',
     ],
 
     /*

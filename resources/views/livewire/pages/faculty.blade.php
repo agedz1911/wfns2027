@@ -1,6 +1,6 @@
 <div wire:init="loadFaculties">
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">faculties</h2>
         </div>
@@ -9,7 +9,7 @@
     <section class="mx-auto w-full px-5 md:px-10 pt-0 pb-10 md:py-20">
         <div class="">
             <div class="w-full px-3">
-                <label class="input input-error rounded-xl input-lg w-full">
+                <label class="input input-primary rounded-xl input-lg w-full">
                     <i class="fa-solid fa-search h-[1em] opacity-50"></i>
                     <input wire:model.live.debounce.500ms="searchTerm" type="text" class="w-full" required
                         placeholder="Search Faculties.." />
@@ -19,7 +19,7 @@
                 <!-- name of each tab group should be unique -->
                 <div class="tabs tabs-border justify-evenly mb-5">
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider text-lg hover:text-red-600 text-[#044b4a]"
+                        class="tab uppercase tracking-wider text-lg hover:text-sky-500 text-primary"
                         aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content  p-5 rounded-lg">
                         @if (!$readyToLoad)
@@ -38,7 +38,7 @@
 
                             @foreach ($indofaculties as $indo)
                             <div
-                                class="card bg-[#3C3793]/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-sky-50 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 
                                 <figure onclick="my_modal_{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
@@ -48,7 +48,7 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#044b4a] hover:text-red-600 hover:cursor-pointer">
+                                        class="text-xl font-semibold text-primary hover:text-sky-700 hover:cursor-pointer">
                                         {{$indo->name}}
                                     </h2>
                                     <p>{{$indo->description}}</p>
@@ -63,12 +63,12 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-[#3C3793]/20 shadow w-20 h-20 object-cover"
+                                        <img class="rounded-full bg-sky-500/20 shadow w-20 h-20 object-cover"
                                             src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                             assets/images/speaker.png"}}" alt="Photo">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-[#044b4a] text-lg font-semibold">{{$indo->name}}</span>
+                                                    class="text-primary text-lg font-semibold">{{$indo->name}}</span>
                                                 <br>
                                                 {{$indo->country}}
                                             </p>
@@ -78,7 +78,7 @@
                                     <p class="font-medium text-lg text-gray-700">Session</p>
                                     <div class="border-t pt-5">
                                         @foreach ($indo->schedules as $schedule)
-                                        <div class="flex flex-wrap gap-5 text-green-600">
+                                        <div class="flex flex-wrap gap-5 text-sky-600">
                                             <p>{{\Carbon\Carbon::parse($schedule->sesi->date)->format('d
                                                 F Y')}}</p>
                                             <p>{{$schedule->time_speaker}}</p>
@@ -109,10 +109,10 @@
                     </div>
 
                     <input type="radio" name="my_tabs_2"
-                        class="tab uppercase tracking-wider  text-lg hover:text-red-600 text-[#044b4a]"
+                        class="tab uppercase tracking-wider  text-lg hover:text-sky-500 text-primary"
                         aria-label="International faculties"  />
                     <div class="tab-content  p-5 rounded-lg">
-                        {{-- @dd($indofaculties) --}}
+                        
                         @if (!$readyToLoad)
                         <div class="flex w-full flex-col gap-4">
                             <div class="skeleton h-40 w-full"></div>
@@ -128,7 +128,7 @@
                         <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div
-                                class="card bg-[#3C3793]/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-sky-50 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 <figure onclick="my_modal_f{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
@@ -138,11 +138,11 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_f{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#044b4a] hover:cursor-pointer hover:text-red-600">
+                                        class="text-xl font-semibold text-primary hover:cursor-pointer hover:text-sky-700">
                                         {{$foreign->name}}
                                     </h2>
                                     <div class="flex justify-center">
-                                        <div class="badge badge-info badge-soft badge-sm">
+                                        <div class="badge badge-primary badge-outline badge-sm">
                                             <p class="text-sm">{{$foreign->country == 'South Korea' ? 'Republic of
                                                 Korea' : $foreign->country}}</p>
                                         </div>
@@ -160,12 +160,12 @@
                                             class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <div class="flex items-center gap-3 pb-3">
-                                        <img class="rounded-full bg-[#3C3793]/20 shadow w-20 h-20 object-cover"
+                                        <img class="rounded-full bg-sky-500/20 shadow w-20 h-20 object-cover"
                                             src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                             assets/images/speaker.png"}}" alt="{{$foreign->name}}">
                                         <div>
                                             <p class="mb-0"><span
-                                                    class="text-[#044b4a] text-lg font-semibold">{{$foreign->name}}</span>
+                                                    class="text-primary text-lg font-semibold">{{$foreign->name}}</span>
                                                 <br>
                                                 {{$foreign->country}}
                                             </p>
@@ -175,7 +175,7 @@
                                     <p class="font-medium text-lg text-gray-700">Session</p>
                                     <div class="border-t pt-5">
                                         @foreach ($foreign->schedules as $schedule)
-                                        <div class="flex flex-wrap gap-5 text-green-600">
+                                        <div class="flex flex-wrap gap-5 text-sky-600">
                                             <p>{{\Carbon\Carbon::parse($schedule->sesi->date)->format('d
                                                 F Y')}}</p>
                                             <p>{{$schedule->time_speaker}}</p>

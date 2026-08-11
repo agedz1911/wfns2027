@@ -7,7 +7,7 @@
             <hr />
             @endif
             <div class="timeline-middle">
-                <i class="fa fa-calendar-check-o text-[#D82128] text-lg"></i>
+                <i class="fa fa-calendar-check-o text-sky-500 text-lg"></i>
             </div>
             @if($index % 2 === 0)
             <div class="timeline-start mb-10 md:text-end">
@@ -16,8 +16,14 @@
                     $date->date_end
                     ? \Carbon\Carbon::parse($date->date)->format('F, jS') . ' - ' .
                     \Carbon\Carbon::parse($date->date_end)->format('F jS, Y')
-                    : \Carbon\Carbon::parse($date->date)->format('F, jS Y')
+                    : \Carbon\Carbon::parse($date->date)->format('F, Y')
                     }}</div>
+                {{-- <div class="text-lg font-black">{{
+                    $date->date_end
+                    ? \Carbon\Carbon::parse($date->date)->format('F, jS') . ' - ' .
+                    \Carbon\Carbon::parse($date->date_end)->format('F jS, Y')
+                    : \Carbon\Carbon::parse($date->date)->format('F, jS Y')
+                    }}</div> --}}
             </div>
             @else
             <div class="timeline-end md:mb-10">

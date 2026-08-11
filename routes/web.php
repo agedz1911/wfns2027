@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Api\AtGlanceController;
 use App\Livewire\Pages\Accommodation;
+use App\Livewire\Pages\AboutIns;
+use App\Livewire\Pages\AboutWfns;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
 use App\Livewire\Pages\Faculty;
@@ -31,4 +33,5 @@ Route::get('/faculties', Faculty::class)->name('faculties');
 Route::get('/accommodation', Accommodation::class)->name('accommodation');
 Route::get('/sponsors', Sponsor::class)->name('sponsors');
 Route::get('/visiting', Visiting::class)->name('visiting');
-Route::get('/topics', Topic::class)->name('topics');
+Route::get('/about-ins', AboutIns::class)->name('about-ins');
+Route::get('/about-wfns', AboutWfns::class)->name('about-wfns');

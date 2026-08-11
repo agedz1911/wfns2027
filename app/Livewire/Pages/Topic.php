@@ -5,7 +5,7 @@ namespace App\Livewire\Pages;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('Topics - WSSFN 2027')]
+#[Title('Topics - WFNS 2027')]
 class Topic extends Component
 {
     public function render()

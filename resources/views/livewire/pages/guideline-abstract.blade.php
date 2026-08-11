@@ -1,6 +1,6 @@
 <div>
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Abstract submission</h2>
         </div>
@@ -8,8 +8,8 @@
 
     <section class="bg-base-100 px-5 md:px-10 pt-0 pb-10 md:py-20">
         <div class="text-center lg:text-start mb-5 md:mb-10">
-            <p class="mb-1 text-[#018284]">Submission</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for <span class="text-[#018284]">Abstract
+            <p class="mb-1 text-primary">Submission</p>
+            <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for <span class="text-primary">Abstract
                     Submission</span>
             </h2>
             {{-- <p>Abstract Free Paper</p> --}}
@@ -18,10 +18,10 @@
             <div class="order-2 w-full max-w-md">
                 <div class="card bg-base-200 w-full shadow-sm rounded-lg">
                     <div class="card-body">
-                        <h2 class="card-title">Online <span class="text-[#018284]">Submission</span></h2>
+                        <h2 class="card-title">Online <span class="text-primary">Submission</span></h2>
                         <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
                         <div class="card-actions justify-end mt-5">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026/index.php/add_abstract/index" class="btn bg-red-600 hover:bg-red-800 text-white"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+                            <a href="https://expo.virconex-id.com/registration/jinef2026/index.php/add_abstract/index" class="btn btn-primary"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
                         </div>
                     </div>
                 </div>
@@ -42,8 +42,8 @@
 
     {{-- <section class="bg-base-200 px-5 md:px-10 py-10 md:py-20">
         <div class="text-center lg:text-start mb-5 md:mb-10">
-            <p class="mb-1 text-[#018284]">Submission</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for <span class="text-[#018284]">Abstract
+            <p class="mb-1 text-primary">Submission</p>
+            <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for <span class="text-primary">Abstract
                     Submission</span>
             </h2>
             <p>Abstract Video</p>
@@ -52,7 +52,7 @@
             <div class="order-2 md:order-1 w-full max-w-md">
                 <div class="card bg-base-100 w-full shadow-sm rounded-lg">
                     <div class="card-body">
-                        <h2 class="card-title">Online <span class="text-[#018284]">Submission</span></h2>
+                        <h2 class="card-title">Online <span class="text-primary">Submission</span></h2>
                         <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
                         <div class="card-actions justify-end mt-5">
                             <button class="btn btn-accent"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</button>
@@ -77,19 +77,19 @@
 
 <section class="bg-base-100 px-5 md:px-10 py-10 md:py-20">
     <div class="text-center lg:text-start mb-5 md:mb-10">
-        <p class="mb-1 text-[#018284]">Submission</p>
-        <h2 class="mb-2 uppercase text-3xl font-semibold">Educative flyer and educative video <span class="text-[#018284]">Competition</span>
+        <p class="mb-1 text-primary">Submission</p>
+        <h2 class="mb-2 uppercase text-3xl font-semibold">Educative flyer and educative video <span class="text-primary">Competition</span>
         </h2>
     </div>
     <div class="flex flex-col md:flex-row justify-between gap-5 md:gap-0">
         <div class="order-2 w-full max-w-md">
             <div class="card bg-base-200 w-full shadow-sm rounded-lg">
                 <div class="card-body">
-                    <h2 class="card-title">Upload <span class="text-[#018284]">Video & Flyer</span></h2>
+                    <h2 class="card-title">Upload <span class="text-primary">Video & Flyer</span></h2>
                     <p class="text-gray-600 italic">*Instruction video or flyer submission.</p>
                     <br>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="text-start text-warning hover:text-[#018284] hover:underline hover:cursor-pointer" onclick="my_modal_1.showModal()">Read more...</button>
+                    <button class="text-start text-warning hover:text-primary hover:underline hover:cursor-pointer" onclick="my_modal_1.showModal()">Read more...</button>
 
                     <div class="card-actions justify-end mt-5">
                         <button class="btn btn-accent"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</button>

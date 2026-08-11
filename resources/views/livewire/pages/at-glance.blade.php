@@ -1,13 +1,13 @@
 <div>
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">program at glance</h2>
         </div>
     </section>
 
     <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg input-error rounded-lg w-full">
+        <label class="input input-lg input-primary rounded-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topics, And Sessions" />
         </label>
@@ -19,19 +19,19 @@
             <div x-data="{ openTab: 1 }" class="lg:w-11/12 w-full mx-auto">
                 <div class="">
                     <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
-                        <button x-on:click="openTab = 5" :class="{ 'bg-[#9E1F63] text-white': openTab === 5 }"
+                        <button x-on:click="openTab = 5" :class="{ 'bg-[#1B1464] text-white': openTab === 5 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8
                             October</button>
-                        <button x-on:click="openTab = 1" :class="{ 'bg-[#9E1F63] text-white': openTab === 1 }"
+                        <button x-on:click="openTab = 1" :class="{ 'bg-[#1B1464] text-white': openTab === 1 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">12
                             November</button>
-                        <button x-on:click="openTab = 2" :class="{ 'bg-[#9E1F63] text-white': openTab === 2 }"
+                        <button x-on:click="openTab = 2" :class="{ 'bg-[#1B1464] text-white': openTab === 2 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">13
                             November</button>
-                        <button x-on:click="openTab = 3" :class="{ 'bg-[#9E1F63] text-white': openTab === 3 }"
+                        <button x-on:click="openTab = 3" :class="{ 'bg-[#1B1464] text-white': openTab === 3 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">14
                             November</button>
-                        <button x-on:click="openTab = 4" :class="{ 'bg-[#9E1F63] text-white': openTab === 4 }"
+                        <button x-on:click="openTab = 4" :class="{ 'bg-[#1B1464] text-white': openTab === 4 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">15
                             November</button>
 
@@ -958,7 +958,7 @@
 
         </div> --}}
         <div class="px-4 md:px-10 mt-10">
-            <p class="text-sm text-error italic">
+            <p class="text-sm text-primary italic">
                 Note: <br>
                 The scientific schedule is provisional and may be adjusted as required.
             </p>

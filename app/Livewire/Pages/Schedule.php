@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Log;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('Scientific Schedule - WSSFN 2027')]
+#[Title('Scientific Schedule - WFNS 2027')]
 class Schedule extends Component
 {
     public $search = '';

@@ -1,13 +1,13 @@
 <div>
     <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#018284] to-[#79d4d6]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">scientific schedule</h2>
         </div>
     </section>
 
     <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg input-error rounded-lg w-full">
+        <label class="input input-lg input-primary rounded-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>
@@ -100,7 +100,7 @@
             <div class="w-full lg:w-3/4 order-2 lg:order-1">
                 @foreach ($uniqDates as $date)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
-                    <h2 class="text-lg font-semibold uppercase text-[#9E1F63] tracking-wider">
+                    <h2 class="text-lg font-semibold uppercase text-primary tracking-wider">
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
@@ -120,15 +120,15 @@
                 <div class="collapse bg-base-100 border border-base-300 my-2">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
-                                class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}} </span></div>
+                                class="fa fa-map-marker text-primary"></i> {{$atglance->room}} </span></div>
                     <div class="collapse-content text-sm">
                         <div class="flex flex-wrap justify-between gap-4 items-start">
                             <div>
                                 <p class="mb-1">
                                     <span class="font-semibold">Session:</span> {{$atglance->title_ses}}
                                 </p>
-                                <p class="mb-2"><i class="fa fa-clock text-[#9E1F63]"></i> {{$atglance->time}} | <i
-                                        class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}}</p>
+                                <p class="mb-2"><i class="fa fa-clock text-primary"></i> {{$atglance->time}} | <i
+                                        class="fa fa-map-marker text-primary"></i> {{$atglance->room}}</p>
                             </div>
                             <div>
                                 {{-- {{$atglance->category_sesi}} --}}
