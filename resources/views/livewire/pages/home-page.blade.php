@@ -113,7 +113,7 @@
                     "</p>
             </div>
 
-            <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-3 px-4">
+            <div class="flex flex-wrap lg:justify-start justify-center items-center gap-3 mt-3 px-4">
                 <div
                     class="z-10 hover:cursor-pointer max-w-sm p-6 bg-white border border-sky-50 rounded-lg shadow-md hover:bg-sky-50">
                     <div class="flex items-center">

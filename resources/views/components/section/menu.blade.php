@@ -6,7 +6,28 @@
     </li>
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{ request()->is('organizing-committee') || request()->is('faculties') || request()->is('about-ins') || request()->is('about-wfns') ? 'text-blue-700' : 'text-gray-800' }} hover:cursor-pointer hover:text-[#0CA6DD]">
+            class="{{  request()->is('about-ins') || request()->is('about-wfns') || request()->is('wfns-congress-asean-region') ? 'text-blue-700' : 'text-gray-800' }} hover:cursor-pointer hover:text-[#0CA6DD]">
+            About <i class="fa-solid fa-angle-down"></i></div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
+
+            <li>
+                <a href="{{route('about-wfns')}}" wire:navigate
+                    class="{{ request()->is('about-wfns') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> WFNS <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+                <a href="{{route('about-ins')}}" wire:navigate
+                    class="{{ request()->is('about-ins') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> INS <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+                <a href="{{route('wfns-congress-asean-region')}}" wire:navigate
+                    class="{{ request()->is('wfns-congress-asean-region') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> WFNS Congress ASEAN Region <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="dropdown dropdown-hover">
+        <div tabindex="0"
+            class="{{ request()->is('organizing-committee') || request()->is('faculties') || request()->is('welcome-message')  ? 'text-blue-700' : 'text-gray-800' }} hover:cursor-pointer hover:text-[#0CA6DD]">
             Congress Information <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             <li>
@@ -14,14 +35,7 @@
                     class="{{ request()->is('welcome-message') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] ">Welcome
                     Message <i class="fa-solid fa-angle-right"></i></a>
             </li>
-            <li>
-                <a href="{{route('about-wfns')}}" wire:navigate
-                    class="{{ request()->is('about-wfns') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] ">About WFNS <i class="fa-solid fa-angle-right"></i></a>
-            </li>
-            <li>
-                <a href="{{route('about-ins')}}" wire:navigate
-                    class="{{ request()->is('about-ins') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] ">About INS <i class="fa-solid fa-angle-right"></i></a>
-            </li>
+
             <li>
                 <a href="/organizing-committee" wire:navigate
                     class="{{ request()->is('organizing-committee') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] ">Local Organizing
@@ -44,7 +58,7 @@
             {{-- <li>
                 <a href="/topics" wire:navigate
                     class="{{ request()->is('topics') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD]">
-                    Topics <i class="fa-solid fa-angle-right"></i></a>
+            Topics <i class="fa-solid fa-angle-right"></i></a>
             </li> --}}
             <li>
                 <a href="/program-at-glance" wire:navigate
@@ -78,7 +92,7 @@
             {{-- <li>
                 <a href="/presentation-schedule" wire:navigate
                     class="{{ request()->is('presentation-schedule') ? 'text-blue-700' : '' }} justify-between hover:text-[#0CA6DD]">
-                    Free Paper Schedule <i class="fa-solid fa-angle-right"></i></a>
+            Free Paper Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
                 <a href="#" class="justify-between hover:text-[#0CA6DD]">Free Paper Presentation Submission <i
@@ -108,7 +122,7 @@
             {{-- <li>
                 <a href="/social-program" wire:navigate
                     class="{{ request()->is('social-program') ? 'text-blue-700' : '' }} justify-between hover:text-[#0CA6DD]">Social
-                    Program <i class="fa-solid fa-angle-right"></i></a>
+            Program <i class="fa-solid fa-angle-right"></i></a>
             </li> --}}
     </div>
 

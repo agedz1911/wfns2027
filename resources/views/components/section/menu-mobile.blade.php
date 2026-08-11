@@ -6,18 +6,23 @@
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
-            <a href="/welcome-message" wire:navigate
-                class="{{ request()->is('welcome-message') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Welcome Message
-                 <i class="fa-solid fa-angle-right"></i></a>
-        </li>
-        <li>
             <a href="{{route('about-wfns')}}" wire:navigate
-                class="{{ request()->is('about-wfns') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">About WFNS
-                 <i class="fa-solid fa-angle-right"></i></a>
+            class="{{ request()->is('about-wfns') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">About WFNS
+            <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
             <a href="{{route('about-ins')}}" wire:navigate
-                class="{{ request()->is('about-ins') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">About INS
+            class="{{ request()->is('about-ins') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">About INS
+            <i class="fa-solid fa-angle-right"></i></a>
+        </li>
+        <li>
+            <a href="{{route('wfns-congress-asean-region')}}" wire:navigate
+            class="{{ request()->is('wfns-congress-asean-region') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">WFNS Congress ASEAN Region
+            <i class="fa-solid fa-angle-right"></i></a>
+        </li>
+        <li>
+            <a href="/welcome-message" wire:navigate
+                class="{{ request()->is('welcome-message') ? 'text-blue-700' : '' }} justify-between font-normal hover:text-[#0CA6DD] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-800 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Welcome Message
                  <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
