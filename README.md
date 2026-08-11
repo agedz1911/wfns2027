@@ -1,4 +1,4 @@
-<p align="center">JINEF 2026</p>
+<p align="center">WFNS 2027</p>
 
 
 
