@@ -83,6 +83,7 @@ class ScheduleSessionResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ReplicateAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
