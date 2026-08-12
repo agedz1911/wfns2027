@@ -6,10 +6,13 @@
     </li>
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
-            class="{{  request()->is('about-ins') || request()->is('about-wfns') || request()->is('wfns-congress-asean-region') ? 'text-blue-700' : 'text-gray-800' }} hover:cursor-pointer hover:text-[#0CA6DD]">
+            class="{{  request()->is('about-ins') || request()->is('about-wfns') || request()->is('wfns-congress-2027') ? 'text-blue-700' : 'text-gray-800' }} hover:cursor-pointer hover:text-[#0CA6DD]">
             About <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
-
+            <li>
+                <a href="{{route('wfns-congress-2027')}}" wire:navigate
+                    class="{{ request()->is('wfns-congress-2027') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> WFNS Congress 2027 <i class="fa-solid fa-angle-right"></i></a>
+            </li>
             <li>
                 <a href="{{route('about-wfns')}}" wire:navigate
                     class="{{ request()->is('about-wfns') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> WFNS <i class="fa-solid fa-angle-right"></i></a>
@@ -17,10 +20,6 @@
             <li>
                 <a href="{{route('about-ins')}}" wire:navigate
                     class="{{ request()->is('about-ins') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> INS <i class="fa-solid fa-angle-right"></i></a>
-            </li>
-            <li>
-                <a href="{{route('wfns-congress-asean-region')}}" wire:navigate
-                    class="{{ request()->is('wfns-congress-asean-region') ? 'text-[#0CA6DD]' : '' }} justify-between hover:text-[#0CA6DD] "> WFNS Congress ASEAN Region <i class="fa-solid fa-angle-right"></i></a>
             </li>
 
         </ul>

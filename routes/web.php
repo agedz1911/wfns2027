@@ -36,4 +36,4 @@ Route::get('/sponsors', Sponsor::class)->name('sponsors');
 Route::get('/visiting', Visiting::class)->name('visiting');
 Route::get('/about-ins', AboutIns::class)->name('about-ins');
 Route::get('/about-wfns', AboutWfns::class)->name('about-wfns');
-Route::get('/wfns-congress-asean-region', AseanRegion::class)->name('wfns-congress-asean-region');
+Route::get('/wfns-congress-2027', AseanRegion::class)->name('wfns-congress-2027');

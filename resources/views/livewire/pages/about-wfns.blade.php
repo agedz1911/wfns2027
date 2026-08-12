@@ -41,7 +41,7 @@
                     community now looks forward to convening in Bali.</p>
             </div>
             <div class="w-full lg:w-1/2 flex flex-wrap gap-4 items-center justify-between md:justify-evenly">
-                <div class="card bg-white md:w-60 w-44 shadow-lg rounded-xl border-l-4 border-primary">
+                <div class="card bg-white md:w-60 w-full shadow-lg rounded-xl border-l-4 border-primary">
                     <div class="card-body">
                         <h2 class="card-title text-primary text-2xl">
                             <span class="js-countup" data-target="49000">0</span>
@@ -50,7 +50,7 @@
                             Represented</p>
                     </div>
                 </div>
-                <div class="card bg-white md:w-60 w-44 shadow-lg rounded-xl border-l-4 border-primary">
+                <div class="card bg-white md:w-60 w-full shadow-lg rounded-xl border-l-4 border-primary">
                     <div class="card-body">
                         <h2 class="card-title text-primary text-2xl">
                             <span class="js-countup" data-target="130">0</span>
@@ -58,7 +58,7 @@
                         <p class="text-gray-600">Members Societes</p>
                     </div>
                 </div>
-                <div class="card bg-white md:w-60 w-44 shadow-lg rounded-xl border-l-4 border-primary">
+                <div class="card bg-white md:w-60 w-full shadow-lg rounded-xl border-l-4 border-primary">
                     <div class="card-body">
                         <h2 class="card-title text-primary text-2xl">
                             <span class="js-countup" data-target="119">0</span>
@@ -66,7 +66,7 @@
                         <p class="text-gray-600">National Societes</p>
                     </div>
                 </div>
-                <div class="card bg-white md:w-60 w-44 shadow-lg rounded-xl border-l-4 border-primary">
+                <div class="card bg-white md:w-60 w-full shadow-lg rounded-xl border-l-4 border-primary">
                     <div class="card-body">
                         <h2 class="card-title text-primary text-2xl">
                             <span class="js-countup" data-target="1955">0</span>
@@ -77,7 +77,7 @@
             </div>
 
         </div>
-        <div class="bg-white card shadow-md rounded-xl p-5">
+        <div class="bg-white card shadow-md rounded-xl p-5 mt-5">
             <img src="{{asset('assets/images/wfns-map-01.png')}}" class="w-full rounded-xl" alt="">
         </div>
 
