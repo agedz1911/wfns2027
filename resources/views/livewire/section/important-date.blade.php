@@ -32,7 +32,7 @@
                     $date->date_end
                     ? \Carbon\Carbon::parse($date->date)->format('F, jS') . ' - ' .
                     \Carbon\Carbon::parse($date->date_end)->format('F jS, Y')
-                    : \Carbon\Carbon::parse($date->date)->format('F, jS Y')
+                    : \Carbon\Carbon::parse($date->date)->format('F,  Y')
                     }}</div>
             </div>
             @endif
