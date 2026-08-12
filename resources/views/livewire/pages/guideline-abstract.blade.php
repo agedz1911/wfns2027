@@ -16,12 +16,12 @@
         </div>
         <div class="flex flex-col md:flex-row justify-between gap-5 md:gap-0">
             <div class="order-2 w-full max-w-md">
-                <div class="card bg-base-200 w-full shadow-sm rounded-lg">
+                <div class="card bg-sky-50 w-full shadow-sm rounded-lg">
                     <div class="card-body">
                         <h2 class="card-title">Online <span class="text-primary">Submission</span></h2>
                         <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
                         <div class="card-actions justify-end mt-5">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026/index.php/add_abstract/index" class="btn btn-primary"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+                            <button class="btn btn-primary"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</button>
                         </div>
                     </div>
                 </div>

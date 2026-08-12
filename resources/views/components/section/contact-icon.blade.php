@@ -47,7 +47,7 @@
     </div>
     <div class="card bg-base-100 shadow-sm border-l-4 border-warning w-full max-w-sm">
         <div class="card-body">
-            <h2 class="card-title text-warning">Congress Secretariat</h2>
+            <h2 class="card-title text-warning">Congress Secretariat <br> Local Sponsorship & Exhibition</h2>
             <div class="flex flex-col gap-0">
                 <p class="font-bold text-lg">PT. Pharma-Pro International</p>
                 <span class="text-sm font-semibold">Principal MCO</span>

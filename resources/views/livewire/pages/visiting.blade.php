@@ -51,7 +51,7 @@
 
                     <dialog id="flight" class="modal">
                         <div class="modal-box w-full max-w-4xl bg-transparent">
-                            <img src="assets/images/bali/Flightime-Bali.jpg" class="w-full rounded-lg shadow-lg"
+                            <img src="assets/images/bali/Flightime-Bali.png" class="w-full rounded-lg shadow-lg"
                                 alt="VR Presentation and conference">
                         </div>
                         <form method="dialog" class="modal-backdrop">

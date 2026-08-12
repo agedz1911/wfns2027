@@ -48,14 +48,9 @@ class ScheduleSessionResource extends Resource
                 TextInput::make('time'),
                 Select::make('room')
                     ->options([
-                        'Betawi Ballroom B' => 'Betawi Ballroom B',
-                        'Bugis A-B Room' => 'Bugis A-B Room',
-                        'Sunda Room' => 'Sunda Room',
-                        'Ibis Style Room' => 'Ibis Style Room',
-                        'Novotel Room' => 'Novotel Room',
-                        'Forensik RSUPN dr. Cipto Mangunkusumo' => 'Forensik RSUPN dr. Cipto Mangunkusumo',
-                        'RSUPN dr. Cipto Mangunkusumo' => 'RSUPN dr. Cipto Mangunkusumo',
-                        
+                        'Room 1' => 'Room 1',
+                        'Room 2' => 'Room 2',
+                        'Room 3' => 'Room 3',
                     ]),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),

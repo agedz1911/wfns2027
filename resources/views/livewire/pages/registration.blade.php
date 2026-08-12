@@ -63,7 +63,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026"
+                            <a href="https://expo.virconex-id.com/registration/wfns2027"
                                 class="btn btn-primary btn-outline btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -84,7 +84,7 @@
                                 </div>
                                 {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
                                 <div class="mt-6">
-                                    <a href="https://expo.virconex-id.com/registration/jinef2026"
+                                    <a href="https://expo.virconex-id.com/registration/wfns2027"
                                         class="btn btn-primary  rounded-xl mb-3 btn-block"><i
                                             class="fa-solid fa-list mx-3"></i>Register Now!</a>
                                 </div>
@@ -137,7 +137,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026"
+                            <a href="https://expo.virconex-id.com/registration/wfns2027"
                                 class="btn btn-primary btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -205,7 +205,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026"
+                            <a href="https://expo.virconex-id.com/registration/wfns2027"
                                 class="btn btn-primary btn-outline btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -253,7 +253,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026"
+                            <a href="https://expo.virconex-id.com/registration/wfns2027"
                                 class="btn btn-primary btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -300,7 +300,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026"
+                            <a href="https://expo.virconex-id.com/registration/wfns2027"
                                 class="btn btn-primary btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -350,7 +350,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/jinef2026"
+                            <a href="https://expo.virconex-id.com/registration/wfns2027"
                                 class="btn btn-primary btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -362,13 +362,22 @@
 
             </div>
         </div>
-        <button class="btn btn-link hover:text-blue-700 no-underline hover:underline"
+        <button class="btn text-error btn-link hover:text-red-700 no-underline hover:underline"
             onclick="my_modal_1.showModal()">*DEVELOPING COUNTRIES are based on IMF List of Low Income Developing
             Countries</button>
         <dialog id="my_modal_1" class="modal">
             <div class="modal-box w-full max-w-7xl">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+                <h3 class="text-xl font-bold text-primary">Developing Countries</h3>
+                <p class="mt-1 text-sm text-gray-500">Based on IMF list of low income developing countries.</p>
+
+                <div class="mt-4 rounded-xl border border-gray-200 bg-base-100 p-4">
+                    <ol class="list-decimal pl-5 text-sm text-gray-700 columns-1 gap-8 md:columns-2 lg:columns-3">
+                        @foreach ($developingCountries as $country)
+                            <li class="mb-2 break-inside-avoid">{{ $country }}</li>
+                        @endforeach
+                    </ol>
+                </div>
+
                 <div class="modal-action">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
@@ -406,133 +415,133 @@
     @foreach ($uniqueLocals as $category)
     @if ($category == 'symposium')
     <h2 class="uppercase font-semibold text-primary mb-2 mt-5">{{$category}}</h2>
-    <div class="relative overflow-x-auto shadow sm:rounded-lg ">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
-            <thead class=" text-white uppercase text-center bg-primary ">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        Category
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Early Bird Registration <br>
-                        up to 31 August 2026
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Regular Registration <br>
-                        2 May - 31 Oct (23:59 UTC+8)
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Late/Onsite Registration <br>
-                        Start from 1 September 2026
-                    </th>
+<div class="relative overflow-x-auto shadow sm:rounded-lg ">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+        <thead class=" text-white uppercase text-center bg-primary ">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Early Bird Registration <br>
+                    up to 31 August 2026
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Regular Registration <br>
+                    2 May - 31 Oct (23:59 UTC+8)
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Late/Onsite Registration <br>
+                    Start from 1 September 2026
+                </th>
 
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($regLocals as $regLocal)
-                @if ($regLocal->category_reg == $category)
-                <tr class="bg-white border-b  border-gray-200 hover:bg-sky-50 ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                        {{$regLocal->title}}
-                    </th>
-                    <td class="px-6 py-4 text-center">
-                        IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($regLocals as $regLocal)
+            @if ($regLocal->category_reg == $category)
+            <tr class="bg-white border-b  border-gray-200 hover:bg-sky-50 ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    {{$regLocal->title}}
+                </th>
+                <td class="px-6 py-4 text-center">
+                    IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
                         0, ',', '.') : 'to be announce'}}
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',',
+                </td>
+                <td class="px-6 py-4 text-center">
+                    IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',',
                         '.') : 'to be announce'}}
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',',
+                </td>
+                <td class="px-6 py-4 text-center">
+                    IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',',
                         '.'): 'to be announce'}}
-                    </td>
-                </tr>
-                @endif
-                @endforeach
-            </tbody>
-        </table>
-        <div class="relative mt-2">
-            <a href="https://expo.virconex-id.com/registration/jinef2026"
-                class="btn btn-primary btn-outline btn-lg rounded-xl mb-3 float-end text-sm"><i
-                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
-        </div>
+                </td>
+            </tr>
+            @endif
+            @endforeach
+        </tbody>
+    </table>
+    <div class="relative mt-2">
+        <a href="https://expo.virconex-id.com/registration/wfns2027"
+            class="btn btn-primary btn-outline btn-lg rounded-xl mb-3 float-end text-sm"><i
+                class="fa-solid fa-list mx-3"></i>Register Now!</a>
     </div>
-    @elseif ($category == 'workshop')
-    <h2 class="uppercase font-semibold text-primary mb-2 mt-5">{{$category}}</h2>
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-        @foreach ($regLocals as $regLocal)
-        @if ($regLocal->category_reg == $category)
-        <div class="card w-full lg:w-96 bg-base-100 shadow-sm">
-            <div class="card-body">
-                <span class="badge badge-xs badge-warning">{{$regLocal->title}}</span>
-                <div class="flex flex-wrap justify-between">
-                    <h2 class="text-xl font-bold">{{$regLocal->subtitle}}</h2>
-                    <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ?
+</div>
+@elseif ($category == 'workshop')
+<h2 class="uppercase font-semibold text-primary mb-2 mt-5">{{$category}}</h2>
+<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+    @foreach ($regLocals as $regLocal)
+    @if ($regLocal->category_reg == $category)
+    <div class="card w-full lg:w-96 bg-base-100 shadow-sm">
+        <div class="card-body">
+            <span class="badge badge-xs badge-warning">{{$regLocal->title}}</span>
+            <div class="flex flex-wrap justify-between">
+                <h2 class="text-xl font-bold">{{$regLocal->subtitle}}</h2>
+                <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ?
                         number_format($regLocal->early_bird_reg,
                         0, ',', '.') : 'to be announce'}}</span>
-                </div>
-                {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
-                <div class="mt-6">
-                    <a href="https://expo.virconex-id.com/registration/jinef2026"
-                        class="btn btn-primary  rounded-xl mb-3 btn-block"><i
-                            class="fa-solid fa-list mx-3"></i>Register Now!</a>
-                </div>
             </div>
-        </div>
-        @endif
-        @endforeach
-    </div>
-    @else
-    <h2 class="uppercase font-semibold text-primary mb-2 mt-5">{{$category}}</h2>
-    <div class="relative overflow-x-auto shadow sm:rounded-lg ">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
-            <thead class=" text-white uppercase text-center bg-primary ">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        Category
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Early Bird Registration <br>
-                        up to 31 August 2026
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Late/Onsite Registration <br>
-                        Start from 1 September 2026
-                    </th>
-
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($regLocals as $regLocal)
-                @if ($regLocal->category_reg == $category)
-                <tr class="bg-white border-b  border-gray-200 hover:bg-sky-50 ">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                        {{$regLocal->title}}
-                    </th>
-                    <td class="px-6 py-4 text-center">
-                        {{$regLocal->early_bird_reg != 0 ? 'IDR ' .
-                        number_format($regLocal->early_bird_reg,
-                        0, ',', '.') : 'to be announce'}}
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        {{$regLocal->normal_reg != 0 ? 'IDR' . number_format($regLocal->normal_reg, 0,
-                        ',',
-                        '.') : ''}}
-                    </td>
-
-                </tr>
-                @endif
-                @endforeach
-            </tbody>
-        </table>
-        <div class="relative mt-2">
-            <a href="https://expo.virconex-id.com/registration/jinef2026"
-                class="btn btn-primary btn-lg rounded-xl mb-3 float-end text-sm"><i
-                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
+            {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
+            <div class="mt-6">
+                <a href="https://expo.virconex-id.com/registration/wfns2027"
+                    class="btn btn-primary  rounded-xl mb-3 btn-block"><i
+                        class="fa-solid fa-list mx-3"></i>Register Now!</a>
+            </div>
         </div>
     </div>
     @endif
     @endforeach
+</div>
+@else
+<h2 class="uppercase font-semibold text-primary mb-2 mt-5">{{$category}}</h2>
+<div class="relative overflow-x-auto shadow sm:rounded-lg ">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+        <thead class=" text-white uppercase text-center bg-primary ">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Early Bird Registration <br>
+                    up to 31 August 2026
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Late/Onsite Registration <br>
+                    Start from 1 September 2026
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($regLocals as $regLocal)
+            @if ($regLocal->category_reg == $category)
+            <tr class="bg-white border-b  border-gray-200 hover:bg-sky-50 ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    {{$regLocal->title}}
+                </th>
+                <td class="px-6 py-4 text-center">
+                    {{$regLocal->early_bird_reg != 0 ? 'IDR ' .
+                        number_format($regLocal->early_bird_reg,
+                        0, ',', '.') : 'to be announce'}}
+                </td>
+                <td class="px-6 py-4 text-center">
+                    {{$regLocal->normal_reg != 0 ? 'IDR' . number_format($regLocal->normal_reg, 0,
+                        ',',
+                        '.') : ''}}
+                </td>
+
+            </tr>
+            @endif
+            @endforeach
+        </tbody>
+    </table>
+    <div class="relative mt-2">
+        <a href="https://expo.virconex-id.com/registration/wfns2027"
+            class="btn btn-primary btn-lg rounded-xl mb-3 float-end text-sm"><i
+                class="fa-solid fa-list mx-3"></i>Register Now!</a>
+    </div>
+</div>
+@endif
+@endforeach
 
 </div> --}}
