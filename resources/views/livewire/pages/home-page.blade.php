@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <section class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3">
+    {{-- <section class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3">
         <div class="order-2 lg:order-1">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 align-items-center">
                 <div class="flex flex-col gap-4">
@@ -148,57 +148,44 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    <section class="bg-gradient-to-b from-[#1B1464] to-[#0CA6DD] relative z-0 py-28">
-        {{-- <div class="absolute inset-0 feature start-0"></div> --}}
+    <section class="bg-gradient-to-t from-[#1B1464] via-[#0CA6DD] to-white relative z-0 py-28">
         <div class="relative">
 
-            <div class="">
-                <h2 class="text-4xl text-white font-semibold uppercase text-center mb-10">Welcome <span
-                        class="text-sky-400">message
-                    </span></h2>
-                <div class="flex flex-col md:flex-row justify-center">
+            <div class="mx-auto w-full px-5 sm:px-8 lg:px-12">
+                <div class="mb-10 flex flex-col gap-4 text-center sm:mb-12">
+                    <h2 class="text-3xl font-bold uppercase text-primary sm:text-4xl">Welcome <span class="text-[#f6c945]">Message</span></h2>
+                    <div class="mx-auto h-1 w-16 bg-[#f6c945]"></div>
+                </div>
+
+                <div class="grid gap-2 lg:grid-cols-3">
                     @foreach ($welcomeMessages as $welcomeMessage)
-                    <div class="mb-5 w-full max-w-3xl items-start px-2 lg:px-8">
-                        <div class="pb-4 text-justify text-white">
-                            {!! Str::limit(str($welcomeMessage->description)->markdown()->sanitizeHtml(), 450) !!} <br>
-                            <a class="text-sky-200 hover:text-white hover:underline" href="{{ route('welcome-message') }}#welcome-message-{{ $welcomeMessage->id }}" >Read
-                                More...</a>
-                        </div>
-                        <div class="mt-3 flex flex-col md:flex-row justify-between">
-                            <div>
-                                <div class="avatar">
-                                    <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
-                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
-                                        class="w-full max-w-52 shadow-md rounded-lg ">
-                                </div>
-                                <div class="p-4 rounded-xl bg-[#1B1464] w-full max-w-sm mt-3 mb-5">
-                                    <div class="p-2 border-s border-white border-spacing-7">
-                                        <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
-                                        </p>
-                                        <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
-                                    </div>
+                        <article class="flex h-full flex-col overflow-hidden border border-white/20 bg-white rounded-md shadow-[0_18px_45px_rgba(11,20,90,0.2)]">
+                            <div class="flex-1 p-7 sm:p-9">
+                                <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#0b7eb6]">A message from the {{ $welcomeMessage->title }}</p>
+                                <div class="h-px w-12 bg-[#0ca6dd]"></div>
+                                <div class="mt-6 text-justify text-sm leading-7 text-slate-600 sm:text-base">
+                                    {!! Str::limit(str($welcomeMessage->description)->markdown()->sanitizeHtml(), 450) !!}
                                 </div>
                             </div>
-                            @if ($welcomeMessage->name2 && $welcomeMessage->title2 !== null)
-                            <div>
-                                <div class="avatar">
-                                    <img src="{{$welcomeMessage->image2 ? asset('storage/' . $welcomeMessage->image2) : "
-                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name2}}"
-                                        class="w-full max-w-52 shadow-md rounded-lg ">
-                                </div>
-                                <div class="p-4 rounded-xl bg-[#1B1464] w-full max-w-sm mt-3 mb-5">
-                                    <div class="p-2 border-s border-white border-spacing-7">
-                                        <p class="text-white text-xs italic"> {{$welcomeMessage->title2}}
-                                        </p>
-                                        <h6 class="font-semibold text-white">{{$welcomeMessage->name2}}</h6>
+
+                            <div class="border-t border-sky-100 bg-[#edf9fd] p-6 sm:p-7">
+                                <div class="flex items-center justify-between gap-4 flex-col md:flex-row">
+                                    <div class="flex min-w-0 items-center gap-4">
+                                        <img src="{{ $welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : asset('assets/images/speaker.png') }}" alt="{{ $welcomeMessage->name }}" class="h-20 w-20 shrink-0 border-4 border-white object-cover shadow-md sm:h-24 sm:w-24">
+                                        <div class="min-w-0">
+                                            <p class="text-sm leading-5 text-[#0b7eb6]">{{ $welcomeMessage->title }}</p>
+                                            <h3 class="mt-1 text-lg font-bold leading-tight text-[#1b1464] sm:text-xl">{{ $welcomeMessage->name }}</h3>
+                                            @if ($welcomeMessage->name2 && $welcomeMessage->title2)
+                                                <p class="mt-2 text-xs leading-5 text-slate-500">{{ $welcomeMessage->name2 }}, {{ $welcomeMessage->title2 }}</p>
+                                            @endif
+                                        </div>
                                     </div>
+                                    <a href="{{ route('welcome-message') }}#welcome-message-{{ $welcomeMessage->id }}" class="shrink-0 border border-[#0b7eb6] px-4 py-2 text-xs font-bold uppercase tracking-[0.1em] text-[#0b7eb6] transition hover:bg-[#0b7eb6] hover:text-white">Read more</a>
                                 </div>
                             </div>
-                            @endif
-                        </div>
-                    </div>
+                        </article>
                     @endforeach
                 </div>
             </div>
@@ -252,7 +239,7 @@
         </div>
     </section>
 
-    <livewire:section.carousel-sponsor />
+    {{-- <livewire:section.carousel-sponsor /> --}}
 
     <section class="w-full pt-24 pb-3 px-2 lg:px-4">
         <div class="text-center mb-5 pb-10">

@@ -6,11 +6,16 @@
         </div>
     </section>
 
-    <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg input-primary rounded-lg w-full">
+    <div class="px-5 md:px-10 pt-0 mt-10 flex flex-wrap gap-2 justify-end md:justify-center items-center">
+        <label class="input input-lg input-primary rounded-lg w-full max-w-6xl">
             <i class="fa fa-search opacity-45 text-sm"></i>
-            <input wire:model.live='search' type="text" class="grow" placeholder="Search Topics, And Sessions" />
+            <input wire:model.live.debounce.500ms='search' type="text" class="grow" placeholder="Search Session Title or Room" />
+            <button type="button" wire:click="resetSearch" class="btn btn-ghost btn-sm" aria-label="Reset search" title="Reset search">
+                <i class="fa fa-times"></i>
+            </button>
         </label>
+        <button class="btn btn-primary rounded-lg"><i
+                class="fa fa-download"></i> Download PDF Schedule</button>
     </div>
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
@@ -58,7 +63,8 @@
                                                 <div
                                                     class="px-0 border border-indigo-200 py-4 w-full rounded-md bg-indigo-50">
                                                     <div class="badge badge-sm badge-info mb-2">
-                                                        {{$room1->category_sesi}}</div>
+                                                        {{$room1->category_sesi}}
+                                                    </div>
                                                     <br>
                                                     {{$room1->time}} <br>
                                                     {{$room1->title_ses}}
@@ -141,7 +147,7 @@
                                     <tr class="">
                                         <td class="align-top">
                                             @foreach ($tujuhbelas as $room91)
-                                           
+
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room91_9{{$loop->index}}.showModal()">
                                                 <div
@@ -154,7 +160,7 @@
                                                     {{$room91->title_ses}}
                                                 </div>
                                             </button>
-                                            
+
 
                                             <dialog id="room91_9{{$loop->index}}" class="modal">
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
@@ -232,19 +238,20 @@
                                     <tr class="">
                                         <td class="align-top">
                                             @foreach ($delapanbelas as $ballroomall10)
-                                            
+
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="ballroomall_10{{$loop->index}}.showModal()">
                                                 <div
                                                     class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
                                                     <div class="badge badge-sm badge-info mb-2">
-                                                        {{$ballroomall10->category_sesi}}</div>
+                                                        {{$ballroomall10->category_sesi}}
+                                                    </div>
                                                     <br>
                                                     {{$ballroomall10->time}} <br>
                                                     {{$ballroomall10->title_ses}}
                                                 </div>
                                             </button>
-                                           
+
 
                                             <dialog id="ballroomall_10{{$loop->index}}" class="modal">
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
@@ -323,19 +330,20 @@
                                     <tr class="">
                                         <td class="align-top">
                                             @foreach ($sembilanbelas as $ballroomall11)
-                                           
+
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="ballroomall_11{{$loop->index}}.showModal()">
                                                 <div
                                                     class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
                                                     <div class="badge badge-sm badge-info mb-2">
-                                                        {{$ballroomall11->category_sesi}}</div>
+                                                        {{$ballroomall11->category_sesi}}
+                                                    </div>
                                                     <br>
                                                     {{$ballroomall11->time}} <br>
                                                     {{$ballroomall11->title_ses}}
                                                 </div>
                                             </button>
-                                           
+
 
                                             <dialog id="ballroomall_11{{$loop->index}}" class="modal">
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
@@ -401,7 +409,7 @@
                     <div x-show="openTab === 5"
                         class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
 
-                       <div class="overflow-x-auto">
+                        <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
@@ -414,19 +422,20 @@
                                     <tr class="">
                                         <td class="align-top">
                                             @foreach ($duapuluh as $room20)
-                                           
+
                                             <button class="hover:shadow-md block w-full my-1"
                                                 onclick="room20_{{$loop->index}}.showModal()">
                                                 <div
                                                     class="border px-0 py-4 w-full rounded-md bg-indigo-50 border-indigo-200 ">
                                                     <div class="badge badge-sm badge-info mb-2">
-                                                        {{$room20->category_sesi}}</div>
+                                                        {{$room20->category_sesi}}
+                                                    </div>
                                                     <br>
                                                     {{$room20->time}} <br>
                                                     {{$room20->title_ses}}
                                                 </div>
                                             </button>
-                                           
+
 
                                             <dialog id="room20_{{$loop->index}}" class="modal">
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">

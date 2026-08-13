@@ -23,15 +23,14 @@
         </div> --}}
         <div class="flex">
             <div class="border-r pr-3">
-                <span class="ml-4 text-sm">
-                        Indonesian Neurosurgical Society
-                    
-                </span>
+                <a href="https://wfns.org/" target="_blank" class="ml-4 text-sm hover:underline hover:text-primary">
+                    World Federation of Neurosurgical Societies
+                </a>
             </div>
             <div class="border-r pr-3">
-                <span class="ml-4 text-sm">
-                        World Federation of Neurosurgical Societies
-                </span>
+                <a href="https://www.ins.or.id/" target="_blank" class="ml-4 text-sm hover:underline hover:text-primary">
+                    Indonesian Neurosurgical Society
+                </a>
             </div>
         </div>
     </div>
@@ -78,9 +77,9 @@
             <form method="dialog">
                 <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             </form>
-            
-                <x-section.contact-icon />
-            
+
+            <x-section.contact-icon />
+
         </div>
         <form method="dialog" class="modal-backdrop">
             <button>close</button>

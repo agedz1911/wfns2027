@@ -1,6 +1,6 @@
 <div>
     <section class=" relative pb-0">
-       <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Visiting</h2>
         </div>
@@ -294,6 +294,74 @@
             </div>
         </div>
     </section>
+
+    <section class="section" id="visa-regulation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="text-primary">UAA 2024</h6>
+                    <h4 class="title mb-4">Visa Regulation</h4>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-6 mt-2">
+                    <h4 class="text-muted">1. Electronic Visa on Arrivals</h4>
+                    <a href="https://molina.imigrasi.go.id/front/info/evoa" target="_blank" class="text-primary fw-bold ">The Official eVisa website for Indonesia (imigrasi.go.id)</a>
+                    <p class="text-muted">List of Countries eligible to apply for Visa on Arrivals online or in person on arrival. At the home page of this site is the option to apply online. Currently, the cost of an eVisa on Arrival is USD 35.</p>
+                    <div class="position-relative">
+                        <img src="/images/voa.png" class="rounded img-fluid" alt="">
+                        <div class="play-icon">
+                            <a href="#!" data-type="youtube" data-id="8gfbTdqMjpM" class="play-btn lightbox">
+                                <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-2">
+                    <div class="card border-0 shadow rounded ms-lg-4 overflow-hidden">
+                        <div class="d-flex p-2 bg-light justify-content-between align-items-center">
+                            <div>
+                                <a href="javascript:void(0)" class="text-danger"><i class="mdi mdi-circle"></i></a>
+                                <a href="javascript:void(0)" class="text-warning"><i class="mdi mdi-circle"></i></a>
+                                <a href="javascript:void(0)" class="text-success"><i class="mdi mdi-circle"></i></a>
+                            </div>
+
+                            <small class="fw-bold"><i class="mdi mdi-circle-medium text-success"></i> How to apply for Indonesia eVisa On Arrival</small>
+                        </div>
+                        <div class="bg-light px-2 position-relative">
+                            <img src="/images/voa.jpg" class="img-fluid" alt="">
+                            <div class="play-icon">
+                                <a href="#!" data-type="youtube" data-id="Qw0mh-DrQTw" class="play-btn lightbox">
+                                    <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                                </a>
+                            </div>
+                            <div class="position-absolute top-0 start-0">
+                                <div class="mt-2 ms-3">
+                                    <span class="badge bg-danger">Recorded</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-2 bg-light">
+                            <p class="text-muted">Easy steps on how to apply for Indonesia eVisa on Arrival via <a href="https://molina.imigrasi.go.id" target="_blank" class="text-primary"><u>molina.imigrasi.go.id</u></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-muted mt-3">
+                <div class="mb-3">
+                    <h4>2. Bali Tourism Levy</h4>
+                    <p class="mb-0">There is a tourism levy for all tourists to Bali effective in Feb 2024. All tourists are highly recommended to make the payment of the levy online at this link.</p>
+                    <a href="https://lovebali.baliprov.go.id/" target="_blank" class="text-primary fw-bold">Welcome to Bali, the Island of Gods - Love Bali (baliprov.go.id)</a>
+                </div>
+                <div class="mt-4 mb-3">
+                    <h4>3. Custom Declaration Form for International Tourists</h4>
+                    <p>All travellers, including Indonesians, entering Indonesia from any border points with a custom inspection area (international arrivals) will need to submit a Custom Declaration online and save the QR Code provided after submission to a Custom Officer for inspection. The form can be submitted at <a href="https://ecd.beacukai.go.id/" target="_blank" class="text-primary fw-bold">Official Website Direktorat Jenderal Bea dan Cukai (beacukai.go.id)</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </div>
 

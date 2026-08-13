@@ -2,7 +2,7 @@
     <section class=" relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">wfns congress asean region</h2>
+            <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">The First  wfns congress asean region</h2>
         </div>
     </section>
 
@@ -63,8 +63,8 @@
                                     <p>2015 Rome </p>
                                 </div>
                                 <div class="w-4/5">
-                                    <progress class="progress progress-primary w-5/6" value="3690" max="4500"></progress>
-                                    <span class="text-gray-600">3,690</span>
+                                    <progress class="progress progress-primary w-5/6" value="3500" max="4500"></progress>
+                                    <span class="text-gray-600">3,500</span>
                                 </div>
                             </div>
                             <div class="flex gap-4 items-center justify-center w-full">
@@ -109,7 +109,7 @@
                                 </div>
                                 <div class="w-4/5">
                                     <progress class="progress progress-primary w-5/6" value="2000" max="4500"></progress>
-                                    <span class="text-gray-600">2,000</span>
+                                    <span class="inline-flex items-baseline gap-1 whitespace-nowrap"><span data-progress-number class="text-gray-600">2,000</span></span><span class="text-xs">(estimated)</span>
                                 </div>
                             </div>
                             <div class="flex gap-4 items-center justify-center w-full">
@@ -118,7 +118,7 @@
                                 </div>
                                 <div class="w-4/5">
                                     <progress class="progress progress-success w-5/6" value="3000" max="4500"></progress>
-                                    <span class="text-success">3,000</span>
+                                    <span class="inline-flex items-baseline gap-1 whitespace-nowrap"><span data-progress-number class="text-success">3,000</span></span> <span class="text-xs">(Target)</span>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                     const target = Number(bar.dataset.target || 0);
                     const duration = 1600;
                     const start = performance.now();
-                    const numberEl = bar.parentElement.querySelector('span');
+                    const numberEl = bar.parentElement.querySelector('[data-progress-number], span');
 
                     const frame = (now) => {
                         const progress = Math.min((now - start) / duration, 1);
@@ -196,7 +196,7 @@
                     if (bar.dataset.prepared !== 'true') {
                         const target = Number(bar.getAttribute('value') || 0);
                         const max = Number(bar.getAttribute('max') || target);
-                        const numberEl = bar.parentElement.querySelector('span');
+                        const numberEl = bar.parentElement.querySelector('[data-progress-number], span');
 
                         bar.dataset.target = String(target);
                         bar.setAttribute('max', String(max));

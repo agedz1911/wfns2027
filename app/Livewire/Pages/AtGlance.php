@@ -22,6 +22,11 @@ class AtGlance extends Component
 
     public $search = '';
 
+    public function resetSearch()
+    {
+        $this->search = '';
+    }
+
     public function mount()
     {
         $this->loadData();
