@@ -165,7 +165,7 @@
                             <div class="flex-1 p-7 sm:p-9">
                                 <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-[#0b7eb6]">A message from the {{ $welcomeMessage->title }}</p>
                                 <div class="h-px w-12 bg-[#0ca6dd]"></div>
-                                <div class="mt-6 text-justify text-sm leading-7 text-slate-600 sm:text-base">
+                                <div class="mt-6 text-justify text-sm sm:text-base leading-7 text-slate-600">
                                     {!! Str::limit(str($welcomeMessage->description)->markdown()->sanitizeHtml(), 450) !!}
                                 </div>
                             </div>

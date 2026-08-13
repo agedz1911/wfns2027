@@ -1,16 +1,22 @@
 <div>
-    <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
-        <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">scientific schedule</h2>
+    
+    <section class="relative overflow-hidden bg-[#075a99]">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(18,183,221,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(20,89,157,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+            <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Scientific Schedule</h2>
+            <div class="mt-7 h-1 w-20 bg-[#f6c945]"></div>
         </div>
     </section>
 
-    <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg input-primary rounded-lg w-full">
+    <div class="px-5 md:px-10 pt-0 mt-10 flex flex-wrap gap-2 justify-end md:justify-center items-center">
+        <label class="input input-lg input-primary rounded-lg w-full max-w-6xl">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>
+        <button class="btn btn-primary rounded-lg"><i
+                class="fa fa-download"></i> Download PDF Schedule</button>
     </div>
 
     <section class="pt-10 pb-24 px-2 lg:px-5">

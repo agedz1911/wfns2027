@@ -1,8 +1,12 @@
 <div>
-    <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
-        <div class="py-16 lg:py-28 text-center relative">
+
+    <section class="relative overflow-hidden bg-[#075a99]">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(18,183,221,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(20,89,157,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">Visiting</h2>
+            <div class="mt-7 h-1 w-20 bg-[#f6c945]"></div>
         </div>
     </section>
 
@@ -36,14 +40,18 @@
                         International Airport, this beautiful island is just a flight away from anywhere in the world.
                     </p>
                     <div class="flex flex-wrap justify-between gap-3 p-2 mt-5">
-                        <button class="font-semibold hover:text-primary hover:cursor-pointer hover:underline">Visa
-                            Regulation</button><i class="fa fa-arrows-up-down"></i>
+                        <button onclick="visa.showModal()"
+                            class="font-semibold hover:text-primary hover:cursor-pointer hover:underline">Visa
+                            Regulation</button>
+                        <i class="fa fa-arrows-up-down"></i>
                         <button onclick="flight.showModal()"
                             class="font-semibold hover:text-primary hover:cursor-pointer hover:underline">Flight time
-                            to Bali </button><i class="fa fa-arrows-up-down"></i>
+                            to Bali </button>
+                        <i class="fa fa-arrows-up-down"></i>
                         <button onclick="electric.showModal()"
                             class="font-semibold hover:text-primary hover:cursor-pointer hover:underline">Electric
-                            Current </button><i class="fa fa-arrows-up-down"></i>
+                            Current </button>
+                        <i class="fa fa-arrows-up-down"></i>
                         <a href="/visiting#venue"
                             class="font-semibold hover:text-primary hover:cursor-pointer hover:underline">Conference
                             Venue </a>
@@ -67,14 +75,89 @@
                             <button>close</button>
                         </form>
                     </dialog>
+                    <dialog id="visa" class="modal">
+                        <div class="modal-box w-full max-w-6xl bg-transparent p-0 shadow-none">
+                            <div class="overflow-hidden rounded-3xl border border-sky-100 bg-white shadow-2xl">
+                                <div
+                                    class="relative overflow-hidden bg-[radial-gradient(circle_at_10%_10%,rgba(56,189,248,0.45),transparent_42%),radial-gradient(circle_at_90%_85%,rgba(14,116,144,0.3),transparent_48%),linear-gradient(120deg,#0b4f8a,#0c6ca9)] p-6 sm:p-8">
+                                    <div class="absolute -right-10 -top-10 h-36 w-36 rounded-full border border-white/20"></div>
+                                    <div class="absolute -bottom-10 left-10 h-28 w-28 rounded-full border border-white/20"></div>
+
+                                    <div class="relative flex flex-wrap items-start justify-center gap-4">
+                                        <div class="max-w-2xl text-white">
+                                            <img src="assets/images/bali/Visa-Bali.jpg"
+                                                class="h-full min-h-[220px] w-full rounded-2xl object-cover shadow-lg"
+                                                alt="Visa regulation in Bali">
+                                        </div>
+                                        <form method="dialog">
+                                            <button
+                                                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-white/10 text-xl text-white transition hover:rotate-90 hover:bg-white/20"
+                                                aria-label="Close visa dialog">&times;</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                                <div class="grid grid-cols-1 ">
+
+                                    <div class="">
+                                        <div role="tablist" class="tabs tabs-lifted tabs-lg w-full">
+                                            <input type="radio" name="visa_tabs" role="tab" class="tab [--tab-border-color:#0284c7]"
+                                                aria-label="Electronic Visa on Arrivals" checked="checked" />
+                                            <div role="tabpanel" class="tab-content rounded-box border border-sky-100 bg-sky-50/40 p-5">
+                                                <h4 class="text-lg font-bold text-sky-900">Electronic Visa on Arrival (e-VOA)</h4>
+                                                <p class="mt-2 text-sm leading-relaxed text-slate-700">Currently, the cost of an eVisa on Arrival is USD 35.</p>
+                                                <div class="mt-4 rounded-xl border border-sky-200 bg-white p-4">
+                                                    <p class="text-sm text-slate-600">The Official eVisa website for Indonesia:</p>
+                                                    <a href="https://evisa.imigrasi.go.id/" target="_blank"
+                                                        class="font-semibold text-sky-700 underline underline-offset-2">evisa.imigrasi.go.id</a>
+                                                    <p class="text-sm text-slate-600 mt-5">List of Countries eligible to apply for Visa on Arrivals online or in person on arrival:</p>
+                                                    <a href="https://evisa.imigrasi.go.id/front/info/evoa" target="_blank"
+                                                        class="font-semibold text-sky-700 underline underline-offset-2">evisa.imigrasi.go.id/front/info/evoa</a>
+                                                </div>
+                                            </div>
+
+                                            <input type="radio" name="visa_tabs" role="tab" class="tab [--tab-border-color:#0284c7]"
+                                                aria-label="Bali Tourism Levy" />
+                                            <div role="tabpanel" class="tab-content rounded-box border border-sky-100 bg-sky-50/40 p-5">
+                                                <h4 class="text-lg font-bold text-sky-900">Bali Tourism Levy</h4>
+                                                <p class="mt-2 text-sm leading-relaxed text-slate-700">There is a tourism levy for all tourists to Bali effective in Feb 2024. All tourists are highly recommended to make the payment of the levy online at this link</p>
+                                                <div class="mt-4 rounded-xl border border-sky-200 bg-white p-4">
+                                                    <p class="text-sm text-slate-600">Payment Portal:</p>
+                                                    <a href="https://lovebali.baliprov.go.id/" target="_blank"
+                                                        class="font-semibold text-sky-700 underline underline-offset-2">lovebali.baliprov.go.id</a>
+                                                </div>
+                                            </div>
+
+                                            <input type="radio" name="visa_tabs" role="tab" class="tab [--tab-border-color:#0284c7]"
+                                                aria-label="Custom Declaration Form for International Tourists" />
+                                            <div role="tabpanel" class="tab-content rounded-box border border-sky-100 bg-sky-50/40 p-5">
+                                                <h4 class="text-lg font-bold text-sky-900">Custom Declaration Form for International Tourists</h4>
+                                                <p class="mt-2 text-sm leading-relaxed text-slate-700">All travellers, including Indonesians, entering Indonesia from any border points with a custom inspection area (international arrivals) will need to submit a Custom Declaration online and save the QR Code provided after submission to a Custom Officer for inspection.</p>
+                                                <div class="mt-4 rounded-xl border border-sky-200 bg-white p-4">
+                                                    <p class="text-sm text-slate-600">Official Website Direktorat Jenderal Bea dan Cukai:</p>
+                                                    <a href="https://ecd.beacukai.go.id/" target="_blank"
+                                                        class="font-semibold text-sky-700 underline underline-offset-2">ecd.beacukai.go.id</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                            <button>close</button>
+                        </form>
+                    </dialog>
                 </div>
             </div>
 
 
 
-            <div class="pt-10 lg:pt-20">
+            {{-- <div class="pt-10 lg:pt-20">
                 <h4 class="text-xl font-semibold tracking-wide mb-5">Top Reasons to Visit Bali</h4>
-                <!-- name of each tab group should be unique -->
+                
                 <div class="tabs tabs-border justify-center gap-3 text-gray-500">
                     <input type="radio" name="my_tabs_2" class="tab text-sky-700 hover:text-sky-900"
                         aria-label="It's sunny all year!" checked="checked" />
@@ -230,8 +313,8 @@
                     </div>
                 </div>
 
-            </div>
-            <!--end row-->
+            </div> --}}
+
         </div>
     </section>
 
@@ -294,74 +377,6 @@
             </div>
         </div>
     </section>
-
-    <section class="section" id="visa-regulation">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h6 class="text-primary">UAA 2024</h6>
-                    <h4 class="title mb-4">Visa Regulation</h4>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-lg-6 mt-2">
-                    <h4 class="text-muted">1. Electronic Visa on Arrivals</h4>
-                    <a href="https://molina.imigrasi.go.id/front/info/evoa" target="_blank" class="text-primary fw-bold ">The Official eVisa website for Indonesia (imigrasi.go.id)</a>
-                    <p class="text-muted">List of Countries eligible to apply for Visa on Arrivals online or in person on arrival. At the home page of this site is the option to apply online. Currently, the cost of an eVisa on Arrival is USD 35.</p>
-                    <div class="position-relative">
-                        <img src="/images/voa.png" class="rounded img-fluid" alt="">
-                        <div class="play-icon">
-                            <a href="#!" data-type="youtube" data-id="8gfbTdqMjpM" class="play-btn lightbox">
-                                <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-2">
-                    <div class="card border-0 shadow rounded ms-lg-4 overflow-hidden">
-                        <div class="d-flex p-2 bg-light justify-content-between align-items-center">
-                            <div>
-                                <a href="javascript:void(0)" class="text-danger"><i class="mdi mdi-circle"></i></a>
-                                <a href="javascript:void(0)" class="text-warning"><i class="mdi mdi-circle"></i></a>
-                                <a href="javascript:void(0)" class="text-success"><i class="mdi mdi-circle"></i></a>
-                            </div>
-
-                            <small class="fw-bold"><i class="mdi mdi-circle-medium text-success"></i> How to apply for Indonesia eVisa On Arrival</small>
-                        </div>
-                        <div class="bg-light px-2 position-relative">
-                            <img src="/images/voa.jpg" class="img-fluid" alt="">
-                            <div class="play-icon">
-                                <a href="#!" data-type="youtube" data-id="Qw0mh-DrQTw" class="play-btn lightbox">
-                                    <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
-                                </a>
-                            </div>
-                            <div class="position-absolute top-0 start-0">
-                                <div class="mt-2 ms-3">
-                                    <span class="badge bg-danger">Recorded</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-2 bg-light">
-                            <p class="text-muted">Easy steps on how to apply for Indonesia eVisa on Arrival via <a href="https://molina.imigrasi.go.id" target="_blank" class="text-primary"><u>molina.imigrasi.go.id</u></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-muted mt-3">
-                <div class="mb-3">
-                    <h4>2. Bali Tourism Levy</h4>
-                    <p class="mb-0">There is a tourism levy for all tourists to Bali effective in Feb 2024. All tourists are highly recommended to make the payment of the levy online at this link.</p>
-                    <a href="https://lovebali.baliprov.go.id/" target="_blank" class="text-primary fw-bold">Welcome to Bali, the Island of Gods - Love Bali (baliprov.go.id)</a>
-                </div>
-                <div class="mt-4 mb-3">
-                    <h4>3. Custom Declaration Form for International Tourists</h4>
-                    <p>All travellers, including Indonesians, entering Indonesia from any border points with a custom inspection area (international arrivals) will need to submit a Custom Declaration online and save the QR Code provided after submission to a Custom Officer for inspection. The form can be submitted at <a href="https://ecd.beacukai.go.id/" target="_blank" class="text-primary fw-bold">Official Website Direktorat Jenderal Bea dan Cukai (beacukai.go.id)</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 </div>
 

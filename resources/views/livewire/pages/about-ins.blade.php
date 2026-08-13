@@ -1,8 +1,12 @@
 <div>
-    <section class=" relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#14599D] to-[#0CA6DD]"></div>
-        <div class="py-16 lg:py-28 text-center relative">
+    
+    <section class="relative overflow-hidden bg-[#075a99]">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(18,183,221,0.7),transparent_35%),radial-gradient(circle_at_90%_80%,rgba(20,89,157,0.95),transparent_45%)]">
+        </div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
             <h2 class="text-white uppercase text-2xl font-bold tracking-wide lg:text-4xl">About INS / PERSPEBSI</h2>
+            <div class="mt-7 h-1 w-20 bg-[#f6c945]"></div>
         </div>
     </section>
 
