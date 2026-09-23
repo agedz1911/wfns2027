@@ -17,9 +17,4 @@ export default {
         },
     },
     plugins: [],
-    // Optimasi performa
-    safelist: [],
-    corePlugins: {
-        scrollBehavior: false, // Disable smooth scroll dari Tailwind
-    },
 };
