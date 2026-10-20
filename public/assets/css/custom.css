@@ -18,6 +18,12 @@ body {
     content-visibility: auto;
 }
 
+@media (min-width: 768px) {
+    .banner {
+        background-image: url(../images/bg-2.png);
+    }
+}
+
 .breadcrumbs {
     background-image: url(../images/brecumb.png);
     background-repeat: no-repeat;

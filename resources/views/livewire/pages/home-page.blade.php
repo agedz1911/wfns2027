@@ -1,8 +1,8 @@
 <div class="relative">
     <section class="lg:min-h-screen banner relative pb-16 lg:pb-28">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0CA6DD]/50 from-10% to-[#fff]/80"></div>
+        {{-- <div class="absolute inset-0 bg-gradient-to-t from-[#0CA6DD]/10 from-10% to-[#fff]/80"></div> --}}
         <div
-            class="z-10 relative pt-10 md:pt-14 lg:pt-32 flex flex-col md:flex-row items-start justify-start md:items-start md:justify-center gap-4">
+            class="z-10 relative pt-10 md:pt-14 lg:pt-32 grid grid-cols-1 md:grid-cols-2 gap-1">
 
             <div class="px-5 md:px-20 order-1 lg:order-1 w-full max-w-4xl flex flex-col items-center md:items-start">
                 <img src="{{asset('assets/images/logo/logo-all.png')}}" class="w-56 rounded-xl" alt="Banner">
@@ -17,10 +17,9 @@
                     </div>
                 </div>
                 <div class="w-full max-w-3xl mt-2 text-center md:text-start">
-                    <p class="text-3xl font-bold tracking-wider mb-2">The 20<sup>th</sup> World Congress of Neurosurgery
+                    <p class="text-4xl font-bold tracking-wider mb-2">The 20<sup>th</sup> World Congress of Neurosurgery
                     </p>
-                    <p class="italic font-bold text-lg md:text-2xl">" One world, one neurosurgery, The Bali Renaissance
-                        "</p>
+                    <p class="italic font-bold text-lg md:text-xl">" One world, One Neurosurgery, The Bali Renaissance "</p>
                 </div>
                 <div class="bg-gradient-to-r from-[#0CA6DD] to-[#1B1464] rounded-3xl mt-5 md:py-2 md:px-6 py-1">
                     <p class="text-white mt-1 text-sm text-center md:text-start">
@@ -39,7 +38,7 @@
                 <livewire:section.flyer />
             </div>
         </div>
-        <div
+        {{-- <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -47,7 +46,7 @@
                     d="M0,288L80,261.3C160,235,320,181,480,170.7C640,160,800,192,960,197.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
                 </path>
             </svg>
-        </div>
+        </div> --}}
     </section>
 
     <section class="px-2 -mt-10 lg:-mt-30 lg:px-7 pb-24 ">

@@ -33,6 +33,8 @@
         </div>
     </div>
     @else
-    <img src="assets/images/banner.png" class="w-full rounded-xl" alt="Banner">
+    <div class="w-full">
+        <img src="assets/images/banner2.png" class="w-full rounded-xl block md:hidden" alt="Banner">
+    </div>
     @endif
 </div>
