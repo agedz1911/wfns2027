@@ -35,7 +35,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        1 May - 30 Sept (23:59 UTC+8)
+                                        1 Apr - 30 Sept (23:59 UTC+8)
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Late/Onsite Registration <br>
@@ -93,7 +93,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        1 May - 30 Sept (23:59 UTC+8)
+                                        1 Apr - 30 Sept (23:59 UTC+8)
                                     </th>
                                 </tr>
                             </thead>
@@ -140,7 +140,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        1 May - 30 Sept (23:59 UTC+8)
+                                        1 Apr - 30 Sept (23:59 UTC+8)
                                     </th>
                                 </tr>
                             </thead>
@@ -248,7 +248,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        1 May - 30 Sept (23:59 UTC+8)
+                                        1 Apr - 30 Sept (23:59 UTC+8)
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Late/Onsite Registration <br>
@@ -433,7 +433,7 @@
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Regular Registration <br>
-                    1 May - 30 Sept (23:59 UTC+8)
+                    1 Apr - 30 Sept (23:59 UTC+8)
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Late/Onsite Registration <br>
