@@ -28,9 +28,8 @@
                     </p>
                 </div>
                 <div class="mt-7 w-full gap-1 flex flex-wrap justify-center md:justify-start">
-                    <a class="btn btn-primary rounded-xl"><i class="fa-solid fa-file-download mr-1 text-xs"></i>Download
-                        Announcement </a>
-                    <a href="/registration" wire:navigate class="btn btn-primary btn-outline rounded-xl"><i
+                    <a  href="https://expo.virconex-id.com/registration/wfns2027/" class="btn btn-primary rounded-xl"><i class="fa-solid fa-user-plus mr-1 text-xs"></i> Create Account </a>
+                    <a href="/registration" wire:navigate class="btn btn-primary btn-outline bg-blue-100/50 rounded-xl hover:text-blue-800"><i
                             class="fa-solid fa-pen-to-square"></i> Register Now </a>
                 </div>
             </div>
