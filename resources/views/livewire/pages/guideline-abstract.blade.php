@@ -25,7 +25,7 @@
                         <h2 class="card-title">Online <span class="text-primary">Submission</span></h2>
                         <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
                         <div class="card-actions justify-end mt-5">
-                            <button class="btn btn-primary"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</button>
+                            <a href="https://expo.virconex-id.com/registration/wfns2027/index.php/add_abstract/index" class="btn btn-primary"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
                         </div>
                     </div>
                 </div>
