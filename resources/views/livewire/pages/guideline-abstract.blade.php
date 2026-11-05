@@ -13,8 +13,7 @@
     <section class="bg-base-100 px-5 md:px-10 pt-0 pb-10 md:py-20">
         <div class="text-center lg:text-start mb-5 md:mb-10">
             <p class="mb-1 text-primary">Submission</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for <span class="text-primary">Abstract
-                    Submission</span>
+            <h2 class="mb-2 uppercase text-3xl font-semibold text-primary">WFNS 2027  <span class="text-gray-600">Free Paper Abstract Submission Guidelines</span>
             </h2>
             {{-- <p>Abstract Free Paper</p> --}}
         </div>
@@ -32,10 +31,10 @@
             </div>
             <div class="order-1 mt-5 md:mt-0 w-full max-w-4xl">
                 @foreach ($guidelineAbstracts as $abstract)
-                <div class="collapse collapse-arrow bg-base-200 border border-base-300">
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300 rounded-lg">
                     <input type="radio" name="my-accordion-2" />
                     <div class="collapse-title font-semibold">{{ $abstract->title }}</div>
-                    <div class="collapse-content text-sm text-gray-600">
+                    <div class="collapse-content text-sm text-gray-500">
                         {!! str($abstract->description)->markdown()->sanitizeHtml() !!}
                     </div>
                 </div>
