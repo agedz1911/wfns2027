@@ -19,8 +19,8 @@
             </button>
         </label>
         <div class="flex flex-col items-center text-center md:text-start md:items-start">
-            <button class="btn btn-primary rounded-lg"><i
-                    class="fa fa-download"></i> Download PDF Schedule</button>
+            <a href="{{asset('assets/download/atglance.pdf')}}" target="_blank" class="btn btn-primary rounded-lg"><i
+                    class="fa fa-download"></i> Download PDF Schedule</a>
             <span class="text-xs text-error italic">* The downloadable PDF schedule always reflects the most up-to-date information</span>
         </div>
     </div>
