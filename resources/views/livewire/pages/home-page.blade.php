@@ -19,7 +19,7 @@
                 <div class="w-full max-w-3xl mt-2 text-center md:text-start">
                     <p class="text-4xl font-bold tracking-wider mb-2">The 20<sup>th</sup> World Congress of Neurosurgery
                     </p>
-                    <p class="italic font-bold text-lg md:text-xl">" One world, One Neurosurgery, The Bali Renaissance "</p>
+                    <p class="italic font-bold text-lg md:text-xl">" One World, One Neurosurgery: The Bali Renaissance "</p>
                 </div>
                 <div class="bg-gradient-to-r from-[#0CA6DD] to-[#1B1464] rounded-3xl mt-5 md:py-2 md:px-6 py-1">
                     <p class="text-white mt-1 text-sm text-center md:text-start">

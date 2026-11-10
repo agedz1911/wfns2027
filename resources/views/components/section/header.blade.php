@@ -37,7 +37,7 @@
 </header>
 <!-- Navigation -->
 <nav id="navbar"
-    class="w-full py-2 bg-transparent z-20 shadow-lg sticky lg:shadow-none lg:fixed transition-colors duration-300">
+    class="w-full py-2 bg-transparent z-40 shadow-lg sticky lg:shadow-none lg:fixed transition-colors duration-300">
     <div class="drawer">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">

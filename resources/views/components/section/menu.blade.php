@@ -85,7 +85,7 @@
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
             class="{{ request()->is('submission')  || request()->is('presentation-schedule')  ? 'text-blue-700' : 'text-gray-800' }} hover:cursor-pointer hover:text-[#0CA6DD]">
-            Free Paper <i class="fa-solid fa-angle-down"></i></div>
+            Submission <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             {{-- <li>
                 <a href="/presentation-schedule" wire:navigate
