@@ -44,11 +44,12 @@ class Schedule extends Component
             ->get();
         $uniqCategories = $atglances->pluck('category_sesi')->unique();
         $uniqDates = $atglances->pluck('date')->unique()->sort();
+        $downloads = \App\Models\DownloadSchedule::all();
         return view('livewire.pages.schedule', [
             'atglances' => $atglances,
             'uniqCategories' => $uniqCategories,
             'uniqDates' => $uniqDates,
-
+            'downloads' => $downloads,
         ]);
     }
 }

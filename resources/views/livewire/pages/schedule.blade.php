@@ -16,9 +16,14 @@
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>
         <div class="flex flex-col items-center text-center md:text-start md:items-start">
-            <a href="{{asset('assets/download/atglance.pdf')}}" target="_blank" class="btn btn-primary rounded-lg"><i
-                    class="fa fa-download"></i> Download PDF Schedule</a>
+            @if($downloads->isNotEmpty())
+            <div class="flex gap-1">
+                <a href="{{$downloads->first()->schedule}}" target="_blank" class="btn btn-primary rounded-lg"><i
+                        class="fa fa-download"></i> Download PDF Schedule</a>
+                <p class="text-xs italic">*updated at {{\Carbon\Carbon::parse($downloads->first()->updated_at)->format('F jS, Y')}}</p>
+            </div>
             <span class="text-xs text-error italic">* The downloadable PDF schedule always reflects the most up-to-date information</span>
+            @endif
         </div>
     </div>
 

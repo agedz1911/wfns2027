@@ -20,6 +20,8 @@ class AtGlance extends Component
     public $sembilanbelas;
     public $duapuluh;
 
+    public $downloads;
+
     public $search = '';
 
     public function resetSearch()
@@ -58,6 +60,8 @@ class AtGlance extends Component
         $this->delapanbelas = $this->atglances->where('date', '2027-11-18')->sortBy('no_urut');
         $this->sembilanbelas = $this->atglances->where('date', '2027-11-19')->sortBy('no_urut');
         $this->duapuluh = $this->atglances->where('date', '2027-11-20')->sortBy('no_urut');
+
+        $this->downloads = \App\Models\DownloadSchedule::all();
     }
 
     public function render()
