@@ -25,12 +25,14 @@ class DownloadScheduleResource extends Resource
         return $form
             ->schema([
                 FileUpload::make('atglance')
+                    ->disk('public')
                     ->maxSize(5120)
                     ->downloadable()
                     ->reorderable()
                     ->preserveFilenames()
                     ->directory('DownloadSchedules'),
                 FileUpload::make('schedule')
+                    ->disk('public')
                     ->maxSize(5120)
                     ->downloadable()
                     ->reorderable()

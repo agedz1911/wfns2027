@@ -18,7 +18,7 @@
         <div class="flex flex-col items-center text-center md:text-start md:items-start">
             @if($downloads->isNotEmpty())
             <div class="flex gap-1">
-                <a href="{{$downloads->first()->schedule}}" target="_blank" class="btn btn-primary rounded-lg"><i
+                <a href="{{ \Illuminate\Support\Facades\Storage::disk('public')->url($downloads->first()->schedule) }}" target="_blank" class="btn btn-primary rounded-lg"><i
                         class="fa fa-download"></i> Download PDF Schedule</a>
                 <p class="text-xs italic">*updated at {{\Carbon\Carbon::parse($downloads->first()->updated_at)->format('F jS, Y')}}</p>
             </div>
