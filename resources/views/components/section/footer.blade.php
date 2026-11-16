@@ -72,7 +72,7 @@
                     <li class="text-sm font-normal hover:text-sky-400 hover:underline"><a href="{{route('faculties')}}">Faculties</a></li>
                     <li class="text-sm font-normal hover:text-sky-400 hover:underline"><a href="{{route('program-at-glance')}}">Schedule</a></li>
                     <li class="text-sm font-normal hover:text-sky-400 hover:underline"><a href="{{route('registration')}}">Registration</a></li>
-                    <li class="text-sm font-normal hover:text-sky-400 hover:underline"><a href="{{route('submission')}}">Submission</a></li>
+                    <li class="text-sm font-normal hover:text-sky-400 hover:underline"><a href="{{route('submission')}}">Abstract Submission</a></li>
                     </li>
                 </ul>
             </div>
