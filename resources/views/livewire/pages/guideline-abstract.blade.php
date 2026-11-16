@@ -80,10 +80,10 @@
                         </table>
                     </div>
                     <div class="flex justify-between items-center">
-                        <a href="{{asset('assets/download/abstract-guidelines.pdf')}}" target="_blank"
+                        <a href="{{asset('assets/download/wfns-2027-abstract-guidelines.pdf')}}" target="_blank"
                             class="btn btn-primary btn-outline"><i class="fa-solid fa-download me-1"></i> Download WFNS
                             2027 Abstract Guidelines</a>
-                        <a href="{{asset('assets/download/abstract-template.pdf')}}" target="_blank"
+                        <a href="{{asset('assets/download/wfns-2027-abstract-template.pdf')}}" target="_blank"
                             class="btn btn-primary btn-outline"><i class="fa-solid fa-download me-1"></i> Download WFNS
                             2027 Free Paper Abstract Template</a>
                     </div>
