@@ -8,7 +8,7 @@
     <div class="relative">
         <div class="flex flex-col items-center w-full max-w-4xl m-auto">
 
-            <img src="assets/images/logo/logo-event.png" class="max-w-xs" alt="Icon" class="">
+            <img src="{{asset('assets/images/logo/logo-event.png')}}" class="max-w-xs" alt="Icon" class="">
 
             <div class="border-b border-white m-auto mb-6 mt-4 w-full max-w-3xl pb-10">
 

@@ -11,9 +11,9 @@
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,7 @@
     </button>
     <!-- Back-to-top Button end -->
 
-    <script src="assets/js/custom.js" data-navigate-once></script>
+    <script src="{{asset('assets/js/custom.js')}}" data-navigate-once></script>
 </body>
 
 </html>
