@@ -78,6 +78,21 @@ it('sends a confirmation to the faculty after saving the CV', function () {
     Mail::assertSentCount(1);
 });
 
+it('accepts a work experience without relevance', function () {
+    Mail::fake();
+    $data = facultySubmission();
+    $data['work'][0]['relevance'] = '';
+
+    Livewire::test(CVFaculty::class)
+        ->set($data)
+        ->call('save')
+        ->assertHasNoErrors()
+        ->assertSet('submitted', true);
+
+    $faculty = CVFacultyModel::where('email', 'faculty@example.com')->firstOrFail();
+    expect($faculty->cvWorks()->firstOrFail()->relevance)->toBeIn(['', null]);
+});
+
 it('does not send a confirmation when validation fails', function () {
     Mail::fake();
     $data = facultySubmission();

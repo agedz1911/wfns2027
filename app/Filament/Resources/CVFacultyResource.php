@@ -22,6 +22,7 @@ class CVFacultyResource extends Resource
 
     public static function form(Form $form): Form
     {
+        $countries = countries();
         return $form
             ->schema([
                 Forms\Components\TextInput::make('full_name')
@@ -40,9 +41,11 @@ class CVFacultyResource extends Resource
                 Forms\Components\TextInput::make('city')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('country')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\Select::make('country')
+                    ->options(collect($countries)->mapWithKeys(function ($country) {
+                        return [$country['name'] => $country['name']];
+                    })->all())
+                    ->searchable(),
                 Forms\Components\TextInput::make('sex')
                     ->required(),
                 Forms\Components\TextInput::make('birth_place')
@@ -88,9 +91,10 @@ class CVFacultyResource extends Resource
                             ->required()
                             ->maxLength(255),
                         Forms\Components\Select::make('country')
-                            ->options(fn (): array => CVFacultyForm::countryOptions())
+                            ->options(collect($countries)->mapWithKeys(function ($country) {
+                                return [$country['name'] => $country['name']];
+                            })->all())
                             ->searchable()
-                            ->in(fn (): array => CVFacultyForm::countries())
                             ->required(),
                         Forms\Components\TextInput::make('role')
                             ->required()
@@ -120,13 +124,13 @@ class CVFacultyResource extends Resource
                             ->required()
                             ->maxLength(255),
                         Forms\Components\Select::make('country')
-                            ->options(fn (): array => CVFacultyForm::countryOptions())
+                            ->options(collect($countries)->mapWithKeys(function ($country) {
+                                return [$country['name'] => $country['name']];
+                            })->all())
                             ->searchable()
-                            ->in(fn (): array => CVFacultyForm::countries())
                             ->required(),
                         Forms\Components\Textarea::make('relevance')
                             ->label('Relevance to your topic')
-                            ->required()
                             ->maxLength(1000)
                             ->columnSpanFull(),
                     ])

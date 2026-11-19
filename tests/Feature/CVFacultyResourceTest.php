@@ -115,7 +115,7 @@ it('validates the experience fields and maximum entries', function () {
     expect(CVFaculty::count())->toBe(0);
 });
 
-it('requires each experience field and limits teaching entries', function () {
+it('requires mandatory experience fields and limits teaching entries', function () {
     $data = cvFacultyResourceData();
 
     Livewire::test(CreateCVFaculty::class)
@@ -134,8 +134,8 @@ it('requires each experience field and limits teaching entries', function () {
             'cvWorks.0.position',
             'cvWorks.0.institution',
             'cvWorks.0.country',
-            'cvWorks.0.relevance',
-        ]);
+        ])
+        ->assertHasNoFormErrors(['cvWorks.0.relevance']);
 
     expect(CVFaculty::count())->toBe(0);
 });

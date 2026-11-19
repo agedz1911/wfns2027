@@ -132,7 +132,7 @@ class CVFaculty extends Component
             'work.*.position' => 'required|string|max:255',
             'work.*.institution' => 'required|string|max:255',
             'work.*.country' => ['required', 'string', Rule::in($this->countryOptions())],
-            'work.*.relevance' => 'required|string|max:1000',
+            'work.*.relevance' => 'nullable|string|max:1000',
 
             'bio' => ['required', 'string', function ($attr, $value, $fail) {
                 $n = $this->bioWordCount;

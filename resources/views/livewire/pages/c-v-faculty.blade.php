@@ -290,7 +290,7 @@
                                 @error("work.$i.country") <span class="mt-1 text-xs text-error">{{ $message }}</span> @enderror
                             </label>
                             <label class="form-control sm:col-span-6">
-                                <span class="label-text mb-1">Relevance to your topic</span>
+                                <span class="label-text mb-1">Relevance to your topic </span>
                                 <textarea rows="2" wire:model.blur="work.{{ $i }}.relevance"
                                     class="textarea textarea-bordered w-full @error(" work.$i.relevance") textarea-error
                                     @enderror"></textarea>
