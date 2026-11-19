@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AtGlanceController;
 use App\Livewire\Pages\AseanRegion;
 use App\Livewire\Pages\CVFaculty;
+use App\Livewire\Pages\SpeakerAbstract;
 use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\AboutIns;
 use App\Livewire\Pages\AboutWfns;
@@ -41,3 +42,4 @@ Route::get('/wfns-congress-2027', AseanRegion::class)->name('wfns-congress-2027'
 Route::get('/sponsorship', Sponsor::class)->name('sponsorship');
 
 Route::get('/faculties/submit-cv', CVFaculty::class)->name('faculties.submit-cv');
+Route::get('/faculties/submit-abstract', SpeakerAbstract::class)->name('faculties.submit-abstract');
