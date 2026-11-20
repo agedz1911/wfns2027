@@ -5,7 +5,7 @@
         <h2 class="text-2xl font-bold">Thank you!</h2>
         <p class="mt-2 text-base-content/70">Your abstract files have been submitted successfully.</p>
         @if ($emailFailed)
-            <p class="mt-3 text-warning" role="alert">Your abstract was saved, but we could not send the confirmation email.</p>
+        <p class="mt-3 text-warning" role="alert">Your abstract was saved, but we could not send the confirmation email.</p>
         @endif
     </div>
     @else
@@ -21,6 +21,9 @@
             <p class="mt-3 text-sm opacity-90">20th World Congress of Neurosurgery · 16–20 November 2027 · Bali Nusa Dua Convention Center, Bali, Indonesia</p>
             <p class="mt-2 text-sm opacity-80">For invited speakers only. Free paper abstracts must be submitted through the online submission form.</p>
         </div>
+        <div>
+            <a href="{{route('faculties.submission-form')}}" class="btn rounded-xl z-10 relative btn-sm"><i class="fa fa-arrow-circle-left"></i> BACK</a>
+        </div>
     </section>
 
     <section class="mx-auto -mt-6 max-w-4xl px-4 pb-16 sm:px-6">
@@ -29,6 +32,7 @@
             {{-- Guidance --}}
             <section class="card bg-base-100 shadow-sm">
                 <div class="card-body sm:p-8">
+                    
                     <h2 class="card-title">Writing guidance</h2>
                     <ul class="list-disc">
                         <li>Write in English. The abstract and biography are published exactly as submitted, so please proofread carefully.</span></li>
@@ -37,6 +41,7 @@
                         <li>Do not include tables, figures, images or references in the abstract.</span></li>
                         <li>Use generic names; if a trade name is essential, name products from more than one company. No promotional content.</span></li>
                     </ul>
+                    <a target="_blank" href="{{asset('assets/download/WFNS_2027_Invited_Speaker_Abstract_Form.docx')}}" type="button" class="btn btn-primary rounded-xl"><i class="fa fa-download"></i> Download Template the Invited Speaker Abstract</a>
                 </div>
             </section>
 
@@ -45,7 +50,6 @@
                 <div class="card-body gap-5 sm:p-8">
                     <div>
                         <h2 class="card-title">Biodata</h2>
-                        <p class="text-sm opacity-70">Write your name exactly as it should appear in the programme.</p>
                     </div>
 
                     <div>
@@ -77,7 +81,7 @@
                             <select wire:model.blur="country" class="input input-bordered w-full @error('country') input-error @enderror">
                                 <option value="">Select a country</option>
                                 @foreach ($countries as $countryOption)
-                                    <option value="{{ $countryOption }}">{{ $countryOption }}</option>
+                                <option value="{{ $countryOption }}">{{ $countryOption }}</option>
                                 @endforeach
                             </select>
                             @error('country') <span class="mt-1 text-xs text-error">{{ $message }}</span> @enderror

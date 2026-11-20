@@ -5,7 +5,7 @@
         <h2 class="mt-4 text-2xl font-bold">Thank you!</h2>
         <p class="mt-2 text-base-content/70">Your faculty information has been submitted successfully.</p>
         @if ($emailFailed)
-            <p class="mt-3 text-warning" role="alert">Your information was saved, but we could not send the confirmation email.</p>
+        <p class="mt-3 text-warning" role="alert">Your information was saved, but we could not send the confirmation email.</p>
         @endif
     </div>
     @else
@@ -24,7 +24,9 @@
                 of Health.
                 Write "N/A" where an item does not apply.
             </p>
-
+        </div>
+        <div>
+            <a href="{{route('faculties.submission-form')}}" class="btn rounded-xl z-10 relative btn-sm"><i class="fa fa-arrow-circle-left"></i> BACK</a>
         </div>
     </section>
 
@@ -96,7 +98,7 @@
                                         class="input input-bordered w-full @error('country') input-error @enderror">
                                         <option value="">Select a country</option>
                                         @foreach ($countries as $countryOption)
-                                            <option value="{{ $countryOption }}">{{ $countryOption }}</option>
+                                        <option value="{{ $countryOption }}">{{ $countryOption }}</option>
                                         @endforeach
                                     </select>
                                     @error('country') <span class="mt-1 text-xs text-error">{{ $message }}</span> @enderror
@@ -199,7 +201,7 @@
                                     @enderror">
                                     <option value="">Select a country</option>
                                     @foreach ($countries as $countryOption)
-                                        <option value="{{ $countryOption }}">{{ $countryOption }}</option>
+                                    <option value="{{ $countryOption }}">{{ $countryOption }}</option>
                                     @endforeach
                                 </select>
                                 @error("teaching.$i.country") <span class="mt-1 text-xs text-error">{{ $message }}</span> @enderror
@@ -284,7 +286,7 @@
                                     @enderror">
                                     <option value="">Select a country</option>
                                     @foreach ($countries as $countryOption)
-                                        <option value="{{ $countryOption }}">{{ $countryOption }}</option>
+                                    <option value="{{ $countryOption }}">{{ $countryOption }}</option>
                                     @endforeach
                                 </select>
                                 @error("work.$i.country") <span class="mt-1 text-xs text-error">{{ $message }}</span> @enderror
@@ -347,7 +349,7 @@
                             <div class="flex-1">
                                 <input type="file" wire:model="photo" accept=".jpg,.jpeg,.png"
                                     class="file-input file-input-bordered file-input-sm w-full max-w-xs">
-                                    <span class="text-xs italic opacity-60">*Max size: 5MB</span>
+                                <span class="text-xs italic opacity-60">*Max size: 5MB</span>
                                 <div wire:loading wire:target="photo" class="mt-1 text-xs opacity-60">Uploading…</div>
                                 @error('photo') <p class="mt-1 text-xs text-error">{{ $message }}</p> @enderror
                             </div>
