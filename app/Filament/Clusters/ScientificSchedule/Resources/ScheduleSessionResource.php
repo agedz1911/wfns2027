@@ -6,6 +6,7 @@ use App\Filament\Clusters\ScientificSchedule;
 use App\Filament\Clusters\ScientificSchedule\Resources\ScheduleSessionResource\Pages;
 use App\Filament\Clusters\ScientificSchedule\Resources\ScheduleSessionResource\RelationManagers;
 use App\Models\ScheduleSession;
+use App\Models\RoomSchedule;
 use Filament\Forms;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\DatePicker;
@@ -47,28 +48,11 @@ class ScheduleSessionResource extends Resource
                     ->native(false),
                 TextInput::make('time'),
                 Select::make('room')
-                    ->options([
-                        'Room 1' => 'Room 1',
-                        'Room 2' => 'Room 2',
-                        'Room 3' => 'Room 3',
-                        'Room 4' => 'Room 4',
-                        'Room 5' => 'Room 5',
-                        'Room 6' => 'Room 6',
-                        'Room 7' => 'Room 7',
-                        'Room 8' => 'Room 8',   
-                        'Room 9' => 'Room 9',
-                        'Room 10' => 'Room 10',
-                        'Room 11' => 'Room 11',
-                        'Room 12' => 'Room 12',
-                        'Room 13' => 'Room 13',
-                        'Room 14' => 'Room 14',
-                        'Room 15' => 'Room 15',
-                        'Room 16' => 'Room 16',
-                        'Room 17' => 'Room 17',
-                        'Room 18' => 'Room 18',
-                        'Room 19' => 'Room 19',
-                        'Room 20' => 'Room 20',
-                    ]),
+                    ->options(
+                        RoomSchedule::where('is_active', true)
+                            ->pluck('room', 'room')
+                            ->toArray()
+                    ),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),
                 TextInput::make('no_urut')

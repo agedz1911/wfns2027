@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WFNS 2027 Free Paper Abstract Submission Guidelines</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .modal-scroll::-webkit-scrollbar { width: 6px; }
+    .modal-scroll::-webkit-scrollbar-track { background: transparent; }
+    .modal-scroll::-webkit-scrollbar-thumb { background: #0CA6DD; border-radius: 9999px; }
+    .wfns-tab-active {
+      color: #1B1464 !important;
+      border-bottom: 2px solid #0c7fdd !important;
+      background-color: rgba(12, 166, 221, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-[#1B1464]/10 min-h-screen flex items-center justify-center p-4">
+
+  <!-- Trigger Button -->
+  <button class="btn text-white border-0 shadow-md" style="background-color: #1B1464;" onclick="wfnsModal.showModal()">
+    WFNS 2027 Free Paper Abstract Submission Guidelines
+  </button>
+
+  <!-- Modal Dialog -->
+  <dialog id="wfnsModal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box w-11/12 max-w-5xl p-0 flex flex-col max-h-[90vh] bg-white text-[#1B1464] shadow-2xl border border-[#0c7fdd]/30 overflow-hidden">
+
+      <!-- Sticky Header -->
+      <div class="text-white px-6 py-4 flex items-start justify-between shrink-0 gap-4" style="background: linear-gradient(135deg, #1B1464 0%, #0c7fdd 100%);">
+        <div>
+          <h3 class="font-bold text-lg md:text-2xl leading-snug">WFNS 2027 Free Paper Abstract Submission Guidelines</h3>
+          <p class="text-xs md:text-sm text-white/90 mt-0.5">20th World Congress of Neurosurgery | 16–20 November 2027 | Bali Nusa Dua Convention Center, Bali, Indonesia</p>
+        </div>
+        <form method="dialog">
+          <button class="btn btn-sm btn-circle btn-ghost text-white hover:bg-white/15 shrink-0" aria-label="Close">✕</button>
+        </form>
+      </div>
+
+      <!-- Sticky Tab Navigation -->
+      <div class="bg-[#0CA6DD]/10 px-6 pt-2 border-b border-[#0c7fdd]/25 shrink-0 overflow-x-auto">
+        <div role="tablist" class="tabs flex-nowrap w-max sm:w-auto gap-1">
+          <button role="tab" id="tabOverview" class="tab wfns-tab-active font-semibold text-xs md:text-sm py-2.5 px-3 rounded-t-lg whitespace-nowrap text-[#1B1464]/75 hover:text-[#1B1464]" onclick="switchWfnsTab('overview')">Overview &amp; Key Dates</button>
+          <button role="tab" id="tabTopics" class="tab font-semibold text-xs md:text-sm py-2.5 px-3 rounded-t-lg whitespace-nowrap text-[#1B1464]/75 hover:text-[#1B1464]" onclick="switchWfnsTab('topics')">Topic Categories</button>
+          <button role="tab" id="tabRules" class="tab font-semibold text-xs md:text-sm py-2.5 px-3 rounded-t-lg whitespace-nowrap text-[#1B1464]/75 hover:text-[#1B1464]" onclick="switchWfnsTab('rules')">Submission Rules &amp; Format</button>
+          <button role="tab" id="tabEthics" class="tab font-semibold text-xs md:text-sm py-2.5 px-3 rounded-t-lg whitespace-nowrap text-[#1B1464]/75 hover:text-[#1B1464]" onclick="switchWfnsTab('ethics')">Ethics, Review &amp; Regulations</button>
+          <button role="tab" id="tabFaq" class="tab font-semibold text-xs md:text-sm py-2.5 px-3 rounded-t-lg whitespace-nowrap text-[#1B1464]/75 hover:text-[#1B1464]" onclick="switchWfnsTab('faq')">Frequently Asked Questions</button>
+        </div>
+      </div>
+
+      <!-- Scrollable Body -->
+      <div class="p-6 overflow-y-auto modal-scroll space-y-6 flex-1 text-sm text-[#1B1464] leading-relaxed bg-white">
+
+        <!-- TAB 1: OVERVIEW AND KEY DATES -->
+        <div id="contentOverview" class="space-y-6">
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-3">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Overview and key dates</h4>
+              <p>Free paper abstracts for the 20th World Congress of Neurosurgery are submitted online by the deadline, and the presenting author of each accepted abstract must complete paid registration within 10 working days of the acceptance letter. The Congress takes place on 16–20 November 2027 at the Bali Nusa Dua Convention Center (BNDCC), Bali, Indonesia.</p>
+              <p class="font-semibold text-[#0c7fdd]">All deadlines end at 23:59 Bali time (WITA, UTC+8).</p>
+
+              <div class="overflow-x-auto pt-2">
+                <table class="table border border-[#0c7fdd]/25">
+                  <thead>
+                    <tr class="text-white" style="background-color: #1B1464;">
+                      <th>Milestone</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-[#0c7fdd]/15">
+                    <tr class="hover:bg-[#0CA6DD]/10"><td>Abstract submission opens</td><td class="font-medium">16 November 2026</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td>Abstract submission closes (last day for any change)</td><td class="font-medium">30 June 2027</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td>Acceptance letters sent</td><td class="font-medium">By 16 August 2027</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td>Presenting author registration and full payment</td><td class="font-medium">Within 10 working days of the acceptance letter, and no later than 31 August 2027</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td>Last day to change presenting author or withdraw</td><td class="font-medium">30 September 2027</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td>Presentation or ePoster upload</td><td class="font-medium">1 November 2027</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td>Congress dates</td><td class="font-medium">16–20 November 2027</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="pt-2">The last day for any change is the submission deadline itself, 23:59 WITA on 30 June 2027. After that, nothing can be changed: not the text, authors, co-authors or category.</p>
+            </div>
+          </section>
+        </div>
+
+        <!-- TAB 2: TOPIC CATEGORIES -->
+        <div id="contentTopics" class="hidden space-y-6">
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-3">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Topic categories</h4>
+              <p>Authors select one primary category for each abstract, and the Scientific Committee may move an abstract to a more suitable category.</p>
+
+              <div class="overflow-x-auto pt-2">
+                <table class="table border border-[#0c7fdd]/25">
+                  <thead>
+                    <tr class="text-white" style="background-color: #1B1464;">
+                      <th>No.</th>
+                      <th>Category</th>
+                      <th>Typical content</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-[#0c7fdd]/15">
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">1</td><td class="font-semibold">Neuro-oncology</td><td>Glioma, metastases, meningioma, intraoperative mapping</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">2</td><td class="font-semibold">Skull base surgery</td><td>Open and endoscopic skull base approaches, pituitary surgery</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">3</td><td class="font-semibold">Neurovascular surgery</td><td>Aneurysm, AVM, bypass, stroke surgery</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">4</td><td class="font-semibold">Endovascular neurosurgery</td><td>Coiling, flow diversion, thrombectomy</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">5</td><td class="font-semibold">Neurotrauma and neurocritical care</td><td>Traumatic brain injury, intracranial pressure, intensive care</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">6</td><td class="font-semibold">Spine and spinal cord</td><td>Degenerative disease, deformity, spinal trauma, tumours</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">7</td><td class="font-semibold">Paediatric neurosurgery</td><td>Congenital anomalies, paediatric tumours, craniosynostosis</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">8</td><td class="font-semibold">Hydrocephalus and CSF disorders</td><td>Shunts, third ventriculostomy, normal pressure hydrocephalus</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">9</td><td class="font-semibold">Functional neurosurgery</td><td>Deep brain stimulation, movement disorders, pain, spasticity</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">10</td><td class="font-semibold">Epilepsy surgery</td><td>Resective, disconnective and neuromodulation procedures</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">11</td><td class="font-semibold">Peripheral nerve surgery</td><td>Brachial plexus, nerve injury, entrapment</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">12</td><td class="font-semibold">Global neurosurgery</td><td>Access to care, low-resource settings, workforce, health systems</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">13</td><td class="font-semibold">Education, ethics and socioeconomics</td><td>Training, simulation, ethics, costs, health policy</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">14</td><td class="font-semibold">Neuroendoscopy and minimally invasive surgery</td><td>Ventricular endoscopy, keyhole approaches, endoscopic spine surgery</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">15</td><td class="font-semibold">Stereotactic radiosurgery</td><td>Radiosurgery for tumours, vascular and functional disorders</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">16</td><td class="font-semibold">Neurosurgical infections</td><td>Tuberculosis, abscess, parasitic disease, postoperative infection</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">17</td><td class="font-semibold">Neuroanatomy and surgical technique</td><td>Anatomical studies, technical notes, operative nuances</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">18</td><td class="font-semibold">Innovation and technology</td><td>Artificial intelligence, robotics, navigation, augmented reality, neuroregeneration</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TAB 3: SUBMISSION RULES & ABSTRACT FORMAT -->
+        <div id="contentRules" class="hidden space-y-6">
+          <!-- Submission rules -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-4">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Submission rules</h4>
+              <p>Abstracts are accepted only through the online submission site. Abstracts sent by email, post or any other route will not be considered.</p>
+
+              <div class="space-y-2 p-4 rounded-lg bg-[#0CA6DD]/10 border border-[#0CA6DD]/25">
+                <h5 class="font-bold text-[#1B1464]">How to submit</h5>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Create an account on the congress registration and submission site, or log in with an existing account.</li>
+                  <li>Complete the submission form for each abstract. A form with missing required fields cannot be submitted.</li>
+                  <li>Preview the abstract and proofread it for spelling, grammar and formatting.</li>
+                  <li>Submit the abstract and check that it shows as submitted in your account.</li>
+                  <li>Keep the confirmation email, which states your abstract number. If it does not arrive within 24 hours, contact freepaper@wfns2027bali.org.</li>
+                </ul>
+                <p class="pt-1">A Word abstract template is available on the congress website to help authors draft their abstract before entering it in the form.</p>
+              </div>
+
+              <div class="space-y-2">
+                <h5 class="font-bold text-[#1B1464]">Information required in the form</h5>
+                <div class="overflow-x-auto">
+                  <table class="table border border-[#0c7fdd]/25">
+                    <thead>
+                      <tr class="text-white" style="background-color: #1B1464;">
+                        <th>Field</th>
+                        <th>Requirement</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#0c7fdd]/15">
+                      <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Presenting author</td><td>Full name, credentials (for example MD or PhD), email address, institution and country. The presenting author receives all correspondence and must register for and attend the Congress</td></tr>
+                      <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Co-authors</td><td>Full name, credentials, email address, institution and country of each co-author; maximum 15 co-authors</td></tr>
+                      <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Topic category</td><td>One category from the topic list</td></tr>
+                      <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Preferred presentation format</td><td>Oral presentation or ePoster; this is a preference only</td></tr>
+                      <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Title and keywords</td><td>As set out in Abstract format; maximum 4 keywords</td></tr>
+                      <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Abstract body</td><td>Maximum 300 words, using the five required headings</td></tr>
+                      <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Additional information</td><td>Whether the work has been presented or published before, ethics approval status, funding source, and whether the presenting author is a resident or medical student</td></tr>
+                      <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Declarations</td><td>Conflicts of interest, industry employment, and acceptance of these guidelines</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <h5 class="font-bold text-[#1B1464]">General rules</h5>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>All abstracts must be written and presented in English.</li>
+                  <li>There is no limit on the number of abstracts an author may submit.</li>
+                  <li>A presenting author may present a maximum of 2 accepted abstracts.</li>
+                  <li>Each abstract must name one presenting author.</li>
+                  <li>The submitting author must confirm that all co-authors have approved the content.</li>
+                  <li>The presentation format selected in the form is a preference only. The Scientific Committee makes the final decision.</li>
+                  <li>Abstracts, including co-authors, may be edited and submitted again until 23:59 WITA on 30 June 2027. The Committee will review only the last version submitted before the deadline. No separate confirmation is sent for edits.</li>
+                  <li>The last day for any change is the submission deadline itself, 23:59 WITA on 30 June 2027. After that, nothing can be changed: not the text, authors, co-authors or category.</li>
+                  <li>Spelling, grammar and formatting will not be corrected by the Committee. Accepted abstracts are published exactly as submitted.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Abstract format -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-4">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Abstract format</h4>
+              <p>The abstract body has a maximum of 300 words and must use the five headings below. The title, author details and keywords do not count toward this limit.</p>
+
+              <div class="overflow-x-auto">
+                <table class="table border border-[#0c7fdd]/25">
+                  <thead>
+                    <tr class="text-white" style="background-color: #1B1464;">
+                      <th>Item</th>
+                      <th>Requirement</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-[#0c7fdd]/15">
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Title</td><td>Concise and specific, maximum 20 words, in title case. No abbreviations, no ALL CAPITAL LETTERS and no full stop at the end. Example: Outcomes of Early Decompressive Craniectomy in Severe Traumatic Brain Injury</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Authors</td><td>Full names, institution and country, entered only in the portal fields</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Keywords</td><td>Maximum 4</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Background</td><td>Why the study was conducted</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Objectives</td><td>The question or aim of the study</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Methods</td><td>Study design, patients or materials, and analysis</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Results</td><td>Actual findings, with enough data to support the conclusions</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Conclusions</td><td>What the findings mean for practice or further research</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="space-y-2 p-4 rounded-lg bg-[#0CA6DD]/10 border border-[#0CA6DD]/25">
+                <p class="font-semibold text-[#1B1464]">The following are not permitted in the abstract body:</p>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Author names, institutions or other details that identify the authors</li>
+                  <li>Tables, figures or references</li>
+                  <li>Advertising or promotional content. Use generic names; if a trade name is essential, name products from more than one company. The Committee may remove promotional content</li>
+                  <li>Unexplained abbreviations; each must be defined at first use, except standard units</li>
+                  <li>Statements such as "results will be discussed at the presentation"</li>
+                </ul>
+                <p class="pt-1 font-medium">All data must be collected and analysed by the submission deadline. Abstracts without completed results will be rejected.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TAB 4: ETHICS, REVIEW, REGULATIONS, PRESENTATION & WITHDRAWAL -->
+        <div id="contentEthics" class="hidden space-y-6">
+          <!-- Ethics and disclosure -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-2.5">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Ethics and disclosure</h4>
+              <p>By submitting an abstract, the authors confirm that the work is their own and meets each requirement below.</p>
+              <ul class="list-disc list-inside space-y-1.5">
+                <li><span class="font-semibold text-[#0c7fdd]">Originality:</span> The work must not have been published in a peer-reviewed journal or presented at an international meeting before submission. Work submitted to a journal but not yet published is acceptable.</li>
+                <li><span class="font-semibold text-[#0c7fdd]">Ethics approval:</span> Studies involving patients, human tissue or animals must have the required ethics approval or exemption.</li>
+                <li><span class="font-semibold text-[#0c7fdd]">Patient privacy:</span> Consent must be obtained where required, and no information may identify a patient.</li>
+                <li><span class="font-semibold text-[#0c7fdd]">Conflicts of interest:</span> All financial and commercial relationships must be declared in the portal and on the opening slides or ePoster.</li>
+                <li><span class="font-semibold text-[#0c7fdd]">Artificial intelligence:</span> Any use of AI tools in writing the abstract must be declared, and AI tools cannot be listed as authors.</li>
+                <li><span class="font-semibold text-[#0c7fdd]">Research integrity:</span> Plagiarism, fabricated data, falsified data or duplicate submission will result in rejection or removal at any stage.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Review and notification -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-2.5">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Review and notification</h4>
+              <p>Each abstract undergoes blinded review by neurosurgeons with expertise in its topic category. Reviewers cannot see author names or institutions. The Committee aims for high scientific quality and a wide geographic spread of presenters.</p>
+              <p class="font-semibold text-[#1B1464]">Abstracts are scored on six criteria:</p>
+              <ul class="list-disc list-inside space-y-1">
+                <li>Significance for neurosurgery</li>
+                <li>Innovation in ideas, methods or approach</li>
+                <li>Rigour of methods</li>
+                <li>Quality of the findings presented</li>
+                <li>Implications for research, practice or policy</li>
+                <li>Clarity of writing</li>
+              </ul>
+              <p>The acceptance letter is sent by email to the submitting author and states the abstract number and presentation format. It is treated as received on the date it is sent, so authors should check their spam folders. Authors with no decision by 16 August 2027 should contact the Scientific Secretariat immediately.</p>
+              <p>The Committee's decisions on acceptance, category and format are final and not open to appeal. Acceptance does not cover registration, travel, accommodation or any other cost.</p>
+            </div>
+          </section>
+
+          <!-- Strict regulations -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-3">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Strict regulations</h4>
+              <p>The presenting author of every accepted abstract must register and pay in full within 10 working days of the acceptance letter, or the abstract is automatically withdrawn. No extension or reinstatement will be granted.</p>
+              <div class="space-y-1 p-3.5 rounded-lg bg-[#0CA6DD]/10 border border-[#0c7fdd]/25">
+                <p class="font-semibold text-[#1B1464]">For this rule:</p>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Working days are Monday to Friday, excluding Indonesian national public holidays.</li>
+                  <li>Counting starts on the first working day after the acceptance letter is sent.</li>
+                  <li>Registration is complete only when full payment has been made and confirmed by the Secretariat. A registration form alone does not count.</li>
+                  <li>Sponsored authors must have their payment made within the same period.</li>
+                </ul>
+              </div>
+              <p>For example, a letter sent on Monday 16 August 2027 gives a deadline of 23:59 WITA on Tuesday 31 August 2027. This skips the 17 August public holiday and assumes no other holiday falls in that period.</p>
+              <p class="font-semibold text-[#1B1464]">The following regulations also apply without exception:</p>
+
+              <div class="overflow-x-auto">
+                <table class="table border border-[#0c7fdd]/25">
+                  <thead>
+                    <tr class="text-white" style="background-color: #1B1464;">
+                      <th>Regulation</th>
+                      <th>Requirement</th>
+                      <th>Consequence</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-[#0c7fdd]/15">
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Registration</td><td>Paid in full within 10 working days of the acceptance letter</td><td>Abstract withdrawn automatically; the slot may be offered to another abstract</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Attendance</td><td>Presenting author attends in person; no virtual or pre-recorded presentations</td><td>Abstract removed from the programme and publications</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Change of presenter</td><td>A listed co-author only, requested in writing by 30 September 2027 and registered</td><td>Request refused; the abstract is withdrawn if the original author cannot present</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Presentation upload</td><td>Slides or ePoster uploaded by 1 November 2027</td><td>Presentation slot may be cancelled</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Presentation limit</td><td>Maximum 2 presentations per presenter</td><td>Further abstracts must have another eligible presenter or be withdrawn</td></tr>
+                    <tr class="bg-[#0CA6DD]/5 hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Failure to present</td><td>Presenter must attend the assigned session</td><td>No certificate; abstract excluded from publications; author may be barred from presenting at the next WFNS World Congress</td></tr>
+                    <tr class="hover:bg-[#0CA6DD]/10"><td class="font-semibold text-[#0c7fdd]">Research misconduct</td><td>Plagiarism, fabrication, falsification or duplicate submission</td><td>Abstract removed; the author's institution may be notified, and the author may be barred from future WFNS meetings</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- Presentation and publication -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-2">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Presentation and publication</h4>
+              <p>Accepted abstracts are presented as oral papers or ePosters, and each presenter receives the session details before the Congress.</p>
+              <p><span class="font-semibold text-[#0c7fdd]">Oral presentation:</span> 8 minutes for the talk and 2 minutes for discussion, using 16:9 slides.</p>
+              <p><span class="font-semibold text-[#0c7fdd]">ePoster:</span> One landscape digital poster in the template supplied by the Committee.</p>
+              <p><span class="font-semibold text-[#0c7fdd]">Content:</span> The presentation must match the accepted abstract and must not contain commercial promotion.</p>
+              <p><span class="font-semibold text-[#0c7fdd]">Certificates:</span> Certificates are issued only to authors who present.</p>
+              <p>By submitting, authors allow the organisers to publish the abstract exactly as submitted, without corrections, in the Congress programme, abstract book, website and app. Authors must have the right to grant this permission.</p>
+            </div>
+          </section>
+
+          <!-- Withdrawal and contact -->
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-2">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Withdrawal and contact</h4>
+              <p>Authors may withdraw an abstract by writing to the Scientific Secretariat by 30 September 2027. Registration fees follow the Congress cancellation and refund policy and are not refunded automatically when an abstract is withdrawn or removed.</p>
+              <p>For abstract questions, contact freepaper@wfns2027bali.org. For registration and payment questions, contact registration@wfns2027bali.org.</p>
+              <div class="p-3.5 rounded-lg bg-[#0CA6DD]/10 border border-[#0c7fdd]/25 mt-2">
+                <p class="font-semibold text-[#1B1464]">Congress Secretariat, 20th World Congress of Neurosurgery</p>
+                <p>Komplek Duta Merlin Blok C 35–38, Jl. Gajah Mada 3–5, Jakarta 10130, Indonesia</p>
+                <p>Phone: +62 21 6386 9502 | Mobile: +62 816 995 230 | Website: wfns2027bali.org</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TAB 5: FREQUENTLY ASKED QUESTIONS -->
+        <div id="contentFaq" class="hidden space-y-6">
+          <section class="card bg-white border border-[#0c7fdd]/25 shadow-xs">
+            <div class="card-body p-5 space-y-4">
+              <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Frequently asked questions</h4>
+
+              <div class="space-y-3 divide-y divide-[#0c7fdd]/15">
+                <div class="pt-2 first:pt-0">
+                  <p class="font-semibold text-[#0c7fdd]">Who can submit an abstract?</p>
+                  <p>Any neurosurgeon, resident, medical student or researcher in neurosurgery or a related field may submit. WFNS membership is not required. The presenting author of an accepted abstract must register for the Congress.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Is there a fee to submit an abstract?</p>
+                  <p>No. Submission is free. Paid registration is required only for the presenting author of an accepted abstract.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">How do I submit an abstract?</p>
+                  <p>Create an account on the congress submission site, complete the online form for each abstract, preview it and submit. You will receive a confirmation email with your abstract number.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">How many abstracts can I submit?</p>
+                  <p>There is no limit on submissions. However, one person may present a maximum of 2 accepted abstracts.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I edit my abstract after submitting it?</p>
+                  <p>Yes, until 23:59 WITA on 30 June 2027. This is the last day for any change: after it, nothing can be changed, including the text, authors, co-authors or category. After editing, submit the abstract again. The Committee will review only the last version submitted before the deadline, and no separate confirmation is sent for edits. Errors will not be corrected by the Committee.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I add or change co-authors?</p>
+                  <p>Yes, until the submission deadline. A maximum of 15 co-authors may be listed, and no co-authors can be added after 30 June 2027.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I submit work that has been presented or published before?</p>
+                  <p>No. Work published in a journal or presented at an international meeting cannot be submitted. Work submitted to a journal but not yet published is acceptable.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I include tables, figures, images or references?</p>
+                  <p>No. The abstract must be text only. Figures and tables may be used in the presentation or ePoster if the abstract is accepted.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I use trade names or product names?</p>
+                  <p>Use generic names wherever possible. If a trade name is essential, name products from more than one company. Abstracts must not contain advertising or promotional content.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">My abstract fits more than one category. Which should I choose?</p>
+                  <p>Choose the category that best matches the main focus of the work. The Scientific Committee may move an abstract to a more suitable category.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I choose between oral presentation and ePoster?</p>
+                  <p>You may state a preference in the form. The Scientific Committee decides the final format, and this decision cannot be changed.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">How are abstracts reviewed?</p>
+                  <p>Each abstract undergoes blinded review by neurosurgeons with expertise in its topic category. Reviewers score significance, innovation, methods, findings, implications and clarity.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">When will I know if my abstract has been accepted?</p>
+                  <p>All submitting authors will be notified by email by 16 August 2027. Decisions on acceptance, category and format are final.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">What must I do after my abstract is accepted?</p>
+                  <p>The presenting author must register and pay in full within 10 working days of the acceptance letter. Otherwise, the abstract is withdrawn automatically and no extension will be given.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can someone else present my abstract?</p>
+                  <p>Yes, but only a co-author listed on the abstract. Request the change in writing to freepaper@wfns2027bali.org by 30 September 2027. The new presenting author must also register.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Can I present online or send a recorded video?</p>
+                  <p>No. All presentations must be given in person at the Congress in Bali.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Will accepted abstracts be published?</p>
+                  <p>Yes. Accepted abstracts will be published in the Congress abstract book, website and app exactly as submitted. Any journal publication will be announced separately.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Will I receive a certificate?</p>
+                  <p>Yes, if you present your abstract at the assigned session. Certificates are not issued to authors who do not present.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Does acceptance include travel, accommodation or registration support?</p>
+                  <p>No. Authors cover their own registration, travel and accommodation.</p>
+                </div>
+
+                <div class="pt-3">
+                  <p class="font-semibold text-[#0c7fdd]">Who do I contact with questions?</p>
+                  <p>For abstract questions, email freepaper@wfns2027bali.org. For registration and payment, email registration@wfns2027bali.org.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Sticky Footer -->
+      <div class="bg-[#0CA6DD]/10 px-6 py-3.5 border-t border-[#0c7fdd]/25 flex justify-end shrink-0">
+        <form method="dialog">
+          <button class="btn btn-sm text-white border-0" style="background-color: #0c7fdd;">Close</button>
+        </form>
+      </div>
+
+    </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('wfnsModal').showModal();
+    });
+
+    function switchWfnsTab(tabName) {
+      const tabs = ['overview', 'topics', 'rules', 'ethics', 'faq'];
+      tabs.forEach(t => {
+        const cap = t.charAt(0).toUpperCase() + t.slice(1);
+        const btn = document.getElementById('tab' + cap);
+        const content = document.getElementById('content' + cap);
+        if (t === tabName) {
+          btn.classList.add('wfns-tab-active');
+          content.classList.remove('hidden');
+        } else {
+          btn.classList.remove('wfns-tab-active');
+          content.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

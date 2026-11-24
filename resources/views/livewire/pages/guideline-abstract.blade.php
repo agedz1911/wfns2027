@@ -10,199 +10,37 @@
         </div>
     </section>
 
-    <section class="bg-base-100 px-5 md:px-10 pt-0 pb-10 md:py-20">
-        <div class="text-center lg:text-start mb-5 md:mb-10">
-            <p class="mb-1 text-primary">Submission</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold text-primary">WFNS 2027 <span class="text-gray-600">Free
-                    Paper Abstract Submission Guidelines</span>
-            </h2>
-            {{-- <p>Abstract Free Paper</p> --}}
-        </div>
-        <div class="flex flex-col md:flex-row justify-between gap-5 md:gap-0">
-            <div class="order-2 w-full max-w-md">
-                <div class="card bg-sky-50 w-full shadow-sm rounded-lg">
-                    <div class="card-body">
-                        <h2 class="card-title">Online <span class="text-primary">Submission</span></h2>
-                        <p class="text-gray-600">WE WILL BE BACK SOON!</p>
-                        {{-- <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
-                        <div class="card-actions justify-end mt-5">
-                            <a href="https://expo.virconex-id.com/registration/wfns2027/index.php/add_abstract/index"
-                                class="btn btn-primary"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
-                        </div> --}}
-                    </div>
-                </div>
+    <section class="py-12 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 ">
+        @foreach ($guidelineAbstracts as $abstract)
+        <div class="card bg-white border border-[#0c7fdd]/25 shadow-xs rounded-xl mb-5">
+            <div class="card-body p-5 space-y-3">
+                <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">{{
+                    $abstract->title }}</h4>
+                {!! str($abstract->description)->markdown()->sanitizeHtml() !!}
             </div>
-            <div class="order-1 mt-5 md:mt-0 w-full max-w-4xl">
-                <div class="flex flex-col gap-3 text-justify">
-                    <h3 class="text-xl font-semibold text-primary">Overview and Key Dates</h3>
-                    <p>Free paper abstracts for the 20th World Congress of Neurosurgery are submitted online by the
-                        deadline, and the presenting author of each accepted abstract must complete paid registration
-                        within 10 working days of the acceptance letter. The Congress takes place on 16–20 November 2027
-                        at the Bali Nusa Dua Convention Center (BNDCC), Bali, Indonesia.</p>
-                    <p>
-                        All deadlines end at 23:59 Bali time (WITA, UTC+8).</p>
-                    <div class="overflow-x-auto">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th>Abstract submission opens</th>
-                                    <td>16 November 2026</td>
-                                </tr>
-                                <!-- row 1 -->
-                                <tr>
-                                    <th>Abstract submission closes</th>
-                                    <td>30 June 2027</td>
-                                </tr>
-                                <!-- row 2 -->
-                                <tr>
-                                    <th>Acceptance letters sent</th>
-                                    <td>By 16 August 2027</td>
-                                </tr>
-                                <!-- row 3 -->
-                                <tr>
-                                    <th>Presenting author registration and full payment</th>
-                                    <td>Within 10 working days of the acceptance letter, and no later than 31 August
-                                        2027</td>
-                                </tr>
-                                <tr>
-                                    <th>Last day to change presenting author or withdraw</th>
-                                    <td>30 September 2027</td>
-                                </tr>
-                                <tr>
-                                    <th>Presentation or ePoster upload</th>
-                                    <td>1 November 2027</td>
-                                </tr>
-                                <tr>
-                                    <th>Congress dates</th>
-                                    <td>16–20 November 2027</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <a href="{{asset('assets/download/wfns-2027-abstract-guidelines.pdf')}}" target="_blank"
-                            class="btn btn-primary btn-outline"><i class="fa-solid fa-download me-1"></i> Download WFNS
-                            2027 Abstract Guidelines</a>
-                        <a href="{{asset('assets/download/wfns-2027-abstract-template.pdf')}}" target="_blank"
-                            class="btn btn-primary btn-outline"><i class="fa-solid fa-download me-1"></i> Download WFNS
-                            2027 Free Paper Abstract Template</a>
-                    </div>
-                </div>
-                <div class="mt-5">
-                    @foreach ($guidelineAbstracts as $abstract)
+        </div>
+        @endforeach
+    </section>
+
+    <section class="border-t border-[#0c7fdd]/25">
+        <div class="py-12  px-5 sm:px-8 lg:px-12 max-w-7xl mx-auto">
+            <div class="card bg-white border border-[#0c7fdd]/25 shadow-xs rounded-xl mb-5 ">
+                <div class="card-body p-5 space-y-3">
+                    <h4 class="card-title text-lg font-bold text-[#1B1464] border-l-4 border-[#0c7fdd] pl-3">Frequently
+                        asked questions</h4>
+                    @foreach ($faqs as $faq)
                     <div class="collapse collapse-arrow bg-base-100 border border-base-300 rounded-lg">
                         <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title font-semibold">{{ $abstract->title }}</div>
+                        <div class="collapse-title font-semibold">{{ $faq->title }}</div>
                         <div class="collapse-content text-sm text-gray-500">
-                            {!! str($abstract->description)->markdown()->sanitizeHtml() !!}
+                            {!! str($faq->description)->markdown()->sanitizeHtml() !!}
                         </div>
                     </div>
                     @endforeach
                 </div>
             </div>
         </div>
+        
     </section>
 
-    {{-- <section class="bg-base-200 px-5 md:px-10 py-10 md:py-20">
-        <div class="text-center lg:text-start mb-5 md:mb-10">
-            <p class="mb-1 text-primary">Submission</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold">Guideline for <span class="text-primary">Abstract
-                    Submission</span>
-            </h2>
-            <p>Abstract Video</p>
-        </div>
-        <div class="flex flex-col md:flex-row justify-between gap-5 md:gap-0">
-            <div class="order-2 md:order-1 w-full max-w-md">
-                <div class="card bg-base-100 w-full shadow-sm rounded-lg">
-                    <div class="card-body">
-                        <h2 class="card-title">Online <span class="text-primary">Submission</span></h2>
-                        <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
-                        <div class="card-actions justify-end mt-5">
-                            <button class="btn btn-accent"><i class="fa-solid fa-upload me-1"></i> Submit
-                                Abstract</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="order-1 md:order-2 mt-5 md:mt-0 w-full max-w-4xl">
-                @foreach ($guidelineVideos as $video)
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title font-semibold">{{ $video->title }}
-                    </div>
-                    <div class="collapse-content text-sm text-gray-600">
-                        {!! str($video->description)->markdown()->sanitizeHtml() !!}
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-base-100 px-5 md:px-10 py-10 md:py-20">
-        <div class="text-center lg:text-start mb-5 md:mb-10">
-            <p class="mb-1 text-primary">Submission</p>
-            <h2 class="mb-2 uppercase text-3xl font-semibold">Educative flyer and educative video <span
-                    class="text-primary">Competition</span>
-            </h2>
-        </div>
-        <div class="flex flex-col md:flex-row justify-between gap-5 md:gap-0">
-            <div class="order-2 w-full max-w-md">
-                <div class="card bg-base-200 w-full shadow-sm rounded-lg">
-                    <div class="card-body">
-                        <h2 class="card-title">Upload <span class="text-primary">Video & Flyer</span></h2>
-                        <p class="text-gray-600 italic">*Instruction video or flyer submission.</p>
-                        <br>
-                        <!-- Open the modal using ID.showModal() method -->
-                        <button class="text-start text-warning hover:text-primary hover:underline hover:cursor-pointer"
-                            onclick="my_modal_1.showModal()">Read more...</button>
-
-                        <div class="card-actions justify-end mt-5">
-                            <button class="btn btn-accent"><i class="fa-solid fa-upload me-1"></i> Submit
-                                Abstract</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="order-1 mt-5 md:mt-0 w-full max-w-4xl">
-                @foreach ($eduvideos as $eduvideo)
-                <div class="collapse collapse-arrow bg-base-200 border border-base-300">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title font-semibold">{{ $eduvideo->title }}</div>
-                    <div class="collapse-content text-sm text-gray-600">
-                        {!! str($eduvideo->description)->markdown()->sanitizeHtml() !!}
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section> --}}
-
-
-    <dialog id="my_modal_1" class="modal">
-        <div class="modal-box w-11/12 max-w-5xl">
-            <h3 class="text-lg font-bold mb-3">Instruction video or flyer submission</h3>
-            <hr>
-            <ul class="list-disc mt-5 ml-5 text-sm text-gray-600">
-                <li>Save the video to be sent to online storage media or the Cloud (such as Google Drive, OneDrive,
-                    ICloud, etc.)</li>
-                <li>Copy the video link that will be sent (provided access has a link to view the video)</li>
-                <li>Select upload video on the asmiua2026.org website page => free paper => abstract submission =>
-                    educative video & flyer competition</li>
-                <li>Sign up by filling in the data on the page => "Go to Form Submit Educative Flyer & Video Competition
-                    ASMIUA 2026"</li>
-                <li>Login using the email and password you created</li>
-                <li> In the add video link menu, enter the title of the video that will be in the competition and paste
-                    the video link that was prepared earlier and select submit.</li>
-                <li>The email and password that has been created can be used again by participants to send more than 1
-                    video</li>
-            </ul>
-            <div class="modal-action">
-                <form method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
-                </form>
-            </div>
-        </div>
-    </dialog>
 </div>
